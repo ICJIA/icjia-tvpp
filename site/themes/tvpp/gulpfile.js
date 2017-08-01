@@ -3,6 +3,7 @@ var theme = 'tvpp';
 
 elixir.config.assetsPath = './';
 elixir.config.publicPath = './';
+elixir.config.sourcemaps = true;
 
 /*
  |--------------------------------------------------------------------------

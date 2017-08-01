@@ -1,6 +1,5 @@
 collections:
   blog: '/blog/{year}/{month}/{day}/{slug}'
-  things: '/things/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
 routes:
