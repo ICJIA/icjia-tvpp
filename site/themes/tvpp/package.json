@@ -1,7 +1,14 @@
 {
   "private": true,
+  "scripts": {
+    "build:css": "node-sass --source-map true --output-style compressed --include-path scss sass/tvpp.scss   css/tvpp.css",
+    "build:js": "uglifyjs --output js/tvpp.js --compress --mangle -- js/site/**.js",
+    "dev": "npm run build:css && npm run build:js"
+  },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "laravel-elixir": "^6.0.0-15"
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-15",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0"
   }
 }
