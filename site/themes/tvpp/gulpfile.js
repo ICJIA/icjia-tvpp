@@ -16,7 +16,15 @@ elixir.config.publicPath = './';
  */
 
 elixir(function(mix) {
-    mix.sass(theme + '.scss', 'css/' + theme + '.css');
+    mix.sass(theme + '.scss', 'css/' + theme + '.css')
 
-    mix.version('css/' + theme + '.css');
+    //mix.version('css/' + theme + '.css');
+
+    mix.scripts([
+        'site/**.js',
+    ], './js/tvpp.js')
+
+    .browserSync({
+      proxy: 'tvpp'
+    });
 });

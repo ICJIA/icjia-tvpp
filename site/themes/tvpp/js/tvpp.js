@@ -1,1 +1,6 @@
-"use strict";var odds=evens.map(function(n){return n+1}),nums=evens.map(function(n,e){return n+e});
+/* javascript here */
+"use strict";
+
+console.log('hello')
+
+//# sourceMappingURL=tvpp.js.map
