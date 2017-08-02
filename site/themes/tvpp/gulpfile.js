@@ -25,7 +25,7 @@ elixir(function(mix) {
     //     'site/**.js',
     // ], './js/tvpp.js')
 
-    mix.rollup('js/app/**.js','js/tvpp.js')
+    mix.browserify('./js/app/index.js','./js/tvpp.js')
 
     .browserSync({
       proxy: 'tvpp'

@@ -1,13 +1,15 @@
-const app = (function(){
-  let _data = [];
+// const app = (function(){
+//   let _data = [];
+//
+//   function init(){
+//     alert('Init');
+//   }
+//
+//   return {
+//     init
+//   };
+// }());
 
-  function init(){
-    console.log('Init');
-  }
+import {init} from './app.js';
 
-  return {
-    init
-  };
-}());
-
-app.init();
+console.log(init())
