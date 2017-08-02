@@ -21,9 +21,11 @@ elixir(function(mix) {
 
     //mix.version('css/' + theme + '.css');
 
-    mix.scripts([
-        'site/**.js',
-    ], './js/tvpp.js')
+    // mix.scripts([
+    //     'site/**.js',
+    // ], './js/tvpp.js')
+
+    mix.rollup('js/app/index.js','js/tvpp.js')
 
     .browserSync({
       proxy: 'tvpp'
