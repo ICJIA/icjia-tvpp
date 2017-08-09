@@ -7,11 +7,13 @@ fields:
     localizable: false
   splash:
     type: assets
+    max_files: 1
     display: Splash image for home page
     container: main
     folder: img
   accent:
     type: assets
+    max_files: 1
     display: Accent image for home page
     container: main
     folder: img
