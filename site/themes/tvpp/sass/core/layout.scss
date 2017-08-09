@@ -228,7 +228,7 @@ footer.page {
     text-align: center;
     border-right: 1px solid #ccc;
     color: #444;
-    margin-top: -10px;
+    margin-top: ($gap / 2);
     border-bottom: 0px solid #ccc;
     border-top: 0px solid #ccc;
     &:last-of-type {
@@ -295,5 +295,5 @@ footer.page {
     color: #fff;
     padding: 0;
     margin: 0;
-    margin-top: 0px
+    margin-top: ($gap / 2)
 }

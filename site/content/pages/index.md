@@ -2,10 +2,12 @@
 title: Home
 splash: /assets/img/tvpp-splash-02.jpg
 accent: /assets/img/tvpp-secondary-01.jpg
-template: home
+template: home/index
 fieldset: home
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 ---
+
+<!-- Splash image -->
 <div class="homeHero hidden-sm hidden-xs" style="background-image: url({{splash}});">
   <div class="homeHeader">
     <h3> Illinois Targeted Violence Prevention Program</h3>
@@ -22,7 +24,8 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 </div> 
 
 
-<div class="hidden-xs hidden-sm" markdown="0">
+<!-- hoverBoxes -->
+<div class="hidden-xs hidden-sm">
   <div style="margin: 0; padding: 0">
 
   <div class="equal">
@@ -62,7 +65,8 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
   </div>
 </div>
 
-<div id="home-welcome" markdown="0">
+<!-- welcomeBox -->
+<div id="home-welcome" >
   <div style="margin: 0; padding: 0">
     <div class="equal">
       <div class="col-sm-12 col-md-5 col-lg-5 welcomeBox" style="background: url({{accent}}) no-repeat center center !important; height: 595px; background-size: cover  !important;">

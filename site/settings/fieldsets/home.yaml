@@ -1,4 +1,4 @@
-title: About
+title: Home
 hide: true
 fields:
   title:
@@ -8,13 +8,13 @@ fields:
   splash:
     type: assets
     max_files: 1
-    display: Splash image for home page
+    display: Splash image
     container: main
     folder: img
   accent:
     type: assets
     max_files: 1
-    display: Accent image for home page
+    display: Accent/Secondary image
     container: main
     folder: img
   content:

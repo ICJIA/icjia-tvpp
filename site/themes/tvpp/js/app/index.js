@@ -1,15 +1,3 @@
-// const app = (function(){
-//   let _data = [];
-//
-//   function init(){
-//     alert('Init');
-//   }
-//
-//   return {
-//     init
-//   };
-// }());
+import { App } from './App.js'
 
-import {init} from './app.js';
-
-console.log(init())
+console.log(App.init())

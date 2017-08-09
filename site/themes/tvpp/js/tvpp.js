@@ -2,32 +2,25 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
-function init(x) {
-  var msg = "Init test";
-  return msg;
-}
+var App = {
 
-exports.init = init;
+    init: function init() {
+
+        return "TVPP Init";
+    }
+};
+
+exports.App = App;
 
 },{}],2:[function(require,module,exports){
 'use strict';
 
-var _app = require('./app.js');
+var _App = require('./App.js');
 
-console.log((0, _app.init)()); // const app = (function(){
-//   let _data = [];
-//
-//   function init(){
-//     alert('Init');
-//   }
-//
-//   return {
-//     init
-//   };
-// }());
+console.log(_App.App.init());
 
-},{"./app.js":1}]},{},[2]);
+},{"./App.js":1}]},{},[2]);
 
 //# sourceMappingURL=tvpp.js.map

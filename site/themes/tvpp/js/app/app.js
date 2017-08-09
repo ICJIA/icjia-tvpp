@@ -1,6 +1,9 @@
-function init(x) {
-  let msg = "Init test"
-  return msg
+const App = {
+
+    init: function() {
+
+        return "TVPP Init"
+    }
 }
 
-export {init}
+export { App }
