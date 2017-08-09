@@ -1,0 +1,21 @@
+title: About
+hide: true
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: false
+  splash:
+    type: assets
+    display: Splash image for home page
+    container: main
+    folder: img
+  accent:
+    type: assets
+    display: Accent image for home page
+    container: main
+    folder: img
+  content:
+    type: markdown
+    display: Content
+

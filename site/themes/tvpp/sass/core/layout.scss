@@ -16,13 +16,13 @@
     .hero-background {
         background-size: cover;
         background-repeat: no-repeat;
-        height: 700px;
+        height: 500px;
         position: relative;
         .overlay {
-            height: 700px;
+            height: 500px;
             width: 100%;
+            background: transparent;
             position: absolute;
-            background: rgba(0, 0, 0, .55);
             z-index: 1;
         }
     }
@@ -151,7 +151,7 @@ footer.page {
 }
 
 
-/* =====================================
+/* ==============================================================================================================
 *
 *
 * Home page
@@ -159,13 +159,16 @@ footer.page {
 *
 */
 
+
+/* --> Splash */
+
 .homeHero {
-    background-image: url(/assets/img/tvpp-splash-02.jpg);
     background-size: cover;
     position: relative;
     height: 60vh;
     .homeHeader {
-        background: #eee;
+        margin-bottom: 0;
+        background: #333;
         opacity: .7;
         padding: 20px 15px 10px 15px;
         position: absolute;
@@ -192,7 +195,7 @@ footer.page {
     .homeHeader {
         h3,
         h4 {
-            color: #000;
+            color: #fff;
             opacity: 1;
             font-family: "Lato", sans-serif;
         }
@@ -210,7 +213,87 @@ footer.page {
     }
     .homeHeader h4,
     &.mobile h4 {
-        font-weight: 700 !important;
+        font-weight: 900 !important;
         color: #e28642 !important;
     }
+}
+
+
+/* --> HoverBoxes */
+
+.hoverBox {
+    background: #ddd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    color: #444;
+    margin-top: -10px;
+    border-bottom: 0px solid #ccc;
+    border-top: 0px solid #ccc;
+    &:last-of-type {
+        border-right: none;
+    }
+    &:first-of-type {
+        border-top: 0px solid #ccc;
+    }
+}
+
+.entry-title {
+    text-transform: uppercase;
+    /*font-family: 'Lato';*/
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.p-description {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hoverBox {
+    &:hover {
+        background: #4c5667;
+        color: #fff;
+        cursor: pointer;
+        cursor: hand;
+    }
+    a {
+        color: #444;
+    }
+    &:hover>a {
+        color: #fff;
+        text-decoration: none;
+        h6.entry-title {
+            color: #e28642;
+        }
+    }
+}
+
+.equal {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex: 1 0 auto;
+    >div[class*='col-'] {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex: 1 0 auto;
+    }
+}
+
+
+/* --> Welcome */
+
+#home-welcome {
+    background: #39404c;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-top: -10px
 }
