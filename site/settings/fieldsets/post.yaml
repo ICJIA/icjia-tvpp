@@ -5,10 +5,6 @@ fields:
     type: title
     display: Title
     localizable: true
-  sub_title:
-    type: textarea
-    display: Subtitle
-    localizable: true
   intro_image:
     type: assets
     display: Intro Image
