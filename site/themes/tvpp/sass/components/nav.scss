@@ -7,12 +7,13 @@
         color: $color_light;
         font-family: $font_sans_head;
         font-size: 12px;
+        font-weight: 900;
         overflow: hidden;
     }
     .nav a {
         color: $color_light;
         letter-spacing: .1em;
-        margin-left: 32px;
+        margin-left: 20px;
         padding: 20px 0;
         text-transform: uppercase;
         -webkit-backface-visibility: hidden;
@@ -50,7 +51,7 @@
     .navbar-brand {
         color: $color_dark;
         font-weight: 900;
-        font-size: 32px;
+        font-size: 16px;
         height: 60px;
         padding: 20px 15px;
         letter-spacing: -.05em;
@@ -77,4 +78,14 @@
     .icon-bar {
         background: #aaa;
     }
+}
+
+.navbar-brand-mobile {
+    color: $color_dark;
+    font-weight: 900;
+    font-size: 10px !important;
+    height: 60px;
+    padding: 20px 15px;
+    letter-spacing: -.05em;
+    margin-top: 20px;
 }

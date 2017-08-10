@@ -7,10 +7,6 @@ fieldset: home
 id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 ---
 
-<style>
-.fullscreen {margin: 0 !important; pading: 0 !important}
-</style>
-
 <!-- Splash image -->
 <div class="homeHero hidden-sm hidden-xs" style="background-image: url({{splash}});">
   <div class="homeHeader">
@@ -29,12 +25,11 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 
 
 <!-- hoverBoxes -->
- <div class="container-fluid fullscreen">
-<div class="hidden-xs hidden-sm">
-  <div style="margin: 0; padding: 0">
+<div class="container-fluid fullscreen hidden-xs hidden-sm">
 
-  <div class="equal">
-    <div class="col-sm-12 col-md-4 col-lg-4 hoverBox">
+<div class="row is-flex">
+
+  <div class="col-sm-12 col-md-4 col-lg-4 hoverBox">
         <a href="/tvpp/our-approach">
           <div class="service-inner">
             <h6 class="entry-title">Our Approach</h6>
@@ -66,8 +61,8 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
           </div>
         </a>
       </div>
-    </div>
-  </div>
+    
+  
 </div>
 </div> 
 
@@ -90,6 +85,30 @@ Ideologically inspired targeted violence is a low frequency/high impact crime.  
 
     </div>
   </div>
-  
+
+</div>
+
+<div id="blog-posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+
+
+<h1 class="special centered">
+        
+        News & Updates
+  </h1>
+  <article class="list">
+          {{ collection:blog limit="3" scope="tag" }} {{ partial:block }} {{ /collection:blog }}
+   </article>
+
+  <div class="read-more">
+          <a href="/blog">Read the archive</a>
+  </div>
+      </div>
+
+
+  </div>
+  </div>
 </div>
 

@@ -42,7 +42,8 @@ h6 {
 
 .special {
     font-family: $font_sans_content;
-    margin-bottom: $gap * 2;
+    margin-bottom: $gap * 1.1;
+    text-transform: uppercase;
     small {
         display: block;
         font-family: $font_sans_content;
@@ -213,4 +214,8 @@ code {
 
 .centered {
     text-align: center;
+}
+
+.orange {
+    color: #e28642
 }

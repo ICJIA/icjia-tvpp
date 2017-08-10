@@ -8,7 +8,7 @@ $font_serif: 'Neuton',
 serif;
 */
 body {
-  background: #eee;
+  background: #fff;
   color: #3c3c3c;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -143,34 +143,6 @@ section header .meta .date {
   float: right;
 }
 
-footer.article-footer {
-  background: #fafafa;
-  padding: 32px 0;
-}
-
-.block .meta {
-  margin: 5px 0 0;
-}
-
-footer.page {
-  background: #fff;
-  padding: 64px 0;
-  text-align: center;
-}
-
-footer.page p.copyright {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-}
-
-footer.page p.tribute {
-  color: #b8b8b8;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-}
-
 .section-things {
   background: #f2f2f2;
 }
@@ -202,12 +174,29 @@ footer.page p.tribute {
 /* ==============================================================================================================
 *
 *
+* Footer
+*
+*
+*/
+footer {
+  background: #191f28;
+  margin-top: 3px;
+}
+
+#copyright {
+  color: #bbb;
+}
+
+/* ==============================================================================================================
+*
+*
 * Home page
 *
 *
 */
 /* --> Splash */
 .homeHero {
+  margin-top: 60px;
   background-size: cover;
   position: relative;
   height: 60vh;
@@ -234,7 +223,7 @@ footer.page p.tribute {
   padding: 20px 15px 10px 15px;
   text-align: center;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 80px;
   margin-bottom: 40px;
   font-size: 36px;
   max-height: 400px;
@@ -274,9 +263,9 @@ footer.page p.tribute {
   text-align: center;
   border-right: 1px solid #ccc;
   color: #444;
-  margin-top: 16px;
-  border-bottom: 0px solid #ccc;
-  border-top: 0px solid #ccc;
+  margin-top: 3px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .hoverBox:last-of-type {
@@ -339,7 +328,9 @@ footer.page p.tribute {
   color: #fff;
   padding: 0;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 3px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .welcome-title,
@@ -350,6 +341,49 @@ footer.page p.tribute {
 .fullwidth {
   margin: 0;
   padding: 0;
+}
+
+.fullscreen {
+  margin: 0 !important;
+  pading: 0 !important;
+}
+
+#blog-posts {
+  background: #ddd;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 3px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Equal column helper */
+.row.is-flex {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.row.is-flex {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.is-flex > [class*='col-'] {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
 }
 
 input.giant {
@@ -418,7 +452,8 @@ h6 em {
 
 .special {
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 64px;
+  margin-bottom: 35.2px;
+  text-transform: uppercase;
 }
 
 .special small {
@@ -609,6 +644,10 @@ code {
   text-align: center;
 }
 
+.orange {
+  color: #e28642;
+}
+
 .gallery header {
   padding: 64px 0 32px;
   text-align: center;
@@ -637,13 +676,14 @@ code {
   color: #b8b8b8;
   font-family: "Lato", sans-serif;
   font-size: 12px;
+  font-weight: 900;
   overflow: hidden;
 }
 
 .navbar-tvpp .nav a {
   color: #b8b8b8;
   letter-spacing: .1em;
-  margin-left: 32px;
+  margin-left: 20px;
   padding: 20px 0;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
@@ -686,7 +726,7 @@ code {
 .navbar-tvpp .navbar-brand {
   color: #3c3c3c;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 16px;
   height: 60px;
   padding: 20px 15px;
   letter-spacing: -.05em;
@@ -716,6 +756,16 @@ code {
 
 .navbar-toggle .icon-bar {
   background: #aaa;
+}
+
+.navbar-brand-mobile {
+  color: #3c3c3c;
+  font-weight: 900;
+  font-size: 10px !important;
+  height: 60px;
+  padding: 20px 15px;
+  letter-spacing: -.05em;
+  margin-top: 20px;
 }
 
 .tags {
