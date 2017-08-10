@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,900);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lato:200,400,300,400italic,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
 /*$font_sans: 'Lato',
 sans-serif;
 */
@@ -69,6 +70,13 @@ body {
   max-width: 700px;
   margin: 0 auto;
   z-index: 2;
+}
+
+.hero header.page-content,
+.hero article.page-content {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  max-width: 100%;
 }
 
 .hero header {
@@ -146,18 +154,6 @@ section header .meta .date {
   float: right;
 }
 
-.section-things {
-  background: #f2f2f2;
-}
-
-.section-things section header {
-  padding: 64px 0 32px;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-  z-index: 2;
-}
-
 .read-more {
   margin-top: 96px;
   font-family: "Open Sans", sans-serif;
@@ -171,7 +167,7 @@ section header .meta .date {
 }
 
 .read-more a {
-  color: #445566;
+  color: #555;
 }
 
 /* ==============================================================================================================
@@ -223,13 +219,13 @@ footer {
 
 .homeHero.mobile {
   opacity: .7;
-  padding: 20px 15px 10px 15px;
+  padding: 40px 15px 10px 15px;
   text-align: center;
   width: 100%;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 3px;
   font-size: 36px;
-  max-height: 400px;
+  max-height: 450px;
 }
 
 .homeHero .homeHeader h3,
@@ -263,6 +259,8 @@ footer {
   background: #ddd;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
   border-right: 1px solid #ccc;
   color: #444;
@@ -287,8 +285,10 @@ footer {
 }
 
 .p-description {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hoverBox:hover {
@@ -309,20 +309,6 @@ footer {
 
 .hoverBox:hover > a h6.entry-title {
   color: #e28642;
-}
-
-.equal {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 1;
-  flex: 1 0 auto;
-}
-
-.equal > div[class*='col-'] {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-flex: 1;
-  flex: 1 0 auto;
 }
 
 /* --> Welcome */
@@ -484,7 +470,66 @@ article.content p {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 32px;
-  margin: 0 0 32px;
+}
+
+article.content h1,
+article.content h2,
+article.content h3,
+article.content h4,
+article.content h5,
+article.content h6 {
+  color: #666;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+article.content h1.dark,
+article.content h2.dark,
+article.content h3.dark,
+article.content h4.dark,
+article.content h5.dark,
+article.content h6.dark {
+  color: #3c3c3c;
+}
+
+article.content h1.mid,
+article.content h2.mid,
+article.content h3.mid,
+article.content h4.mid,
+article.content h5.mid,
+article.content h6.mid {
+  color: #555;
+}
+
+article.content h1.rule,
+article.content h2.rule,
+article.content h3.rule,
+article.content h4.rule,
+article.content h5.rule,
+article.content h6.rule {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+article.content h1.spacer,
+article.content h2.spacer,
+article.content h3.spacer,
+article.content h4.spacer,
+article.content h5.spacer,
+article.content h6.spacer {
+  margin-top: 50px;
+}
+
+article.content h1.caption,
+article.content h2.caption,
+article.content h3.caption,
+article.content h4.caption,
+article.content h5.caption,
+article.content h6.caption {
+  font-size: 14px;
+  font-weight: 900;
+  color: #222;
+  margin-bottom: 40px;
 }
 
 article.content p > a {
@@ -504,6 +549,13 @@ article.content p > a:after {
   bottom: 0.1em;
   left: 0;
   z-index: -1;
+}
+
+article.content .abstract {
+  font-weight: 300;
+  margin-bottom: 50px;
+  color: #999;
+  font-size: 24px;
 }
 
 article.content blockquote {
@@ -535,7 +587,7 @@ article.content li:last-child {
 }
 
 article.content img {
-  margin-top: 10px;
+  margin-top: 40px;
   max-width: 100%;
   text-align: center;
 }
@@ -651,6 +703,83 @@ code {
   color: #e28642;
 }
 
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.pullquote {
+  width: 65%;
+  border-top: 8px solid #666;
+  border-bottom: 8px solid #666;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 26px;
+  color: #666;
+}
+
+.pullquote:before {
+  content: "\201C";
+  font-size: 32px;
+  top: -20px;
+}
+
+.pullquote:after {
+  content: '\201D';
+  font-size: 32px;
+  top: -20px;
+}
+
+.pullquote.right {
+  float: right;
+  margin-right: -100px;
+  margin-left: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pullquote.left {
+  float: left;
+  margin-left: -100px;
+  margin-right: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pullquote a.quotelink {
+  color: #e28642;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.pullquote a.quotelink:after {
+  font-family: FontAwesome;
+  content: "\f08e";
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+.pullquote a.quotelink.right {
+  float: right;
+}
+
+.pullquote a.quotelink.left {
+  float: left;
+}
+
+.pullquote .quoter {
+  color: #aaa;
+  margin-top: 25px;
+}
+
+.pullquote .quoter.right {
+  float: right;
+}
+
+.pullquote .quoter.left {
+  float: left;
+}
+
 .gallery header {
   padding: 64px 0 32px;
   text-align: center;
@@ -670,7 +799,7 @@ code {
 
 .navbar-tvpp {
   background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #bbb;
   border-radius: 0;
   min-height: 60px;
 }
@@ -729,7 +858,7 @@ code {
 .navbar-tvpp .navbar-brand {
   color: #3c3c3c;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 18px;
   height: 60px;
   padding: 20px 15px;
   letter-spacing: -.05em;
@@ -786,7 +915,7 @@ code {
 .tags a {
   display: inline-block;
   background: rgba(0, 0, 0, 0.05);
-  color: #445566;
+  color: #555;
   cursor: pointer;
   font-family: "Lato", sans-serif;
   font-size: 13px;
@@ -891,5 +1020,18 @@ img.zoom-img {
 .zoom-overlay-transitioning {
   cursor: default;
 }
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .pullquote {
+    display: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 
 /*# sourceMappingURL=tvpp.css.map */

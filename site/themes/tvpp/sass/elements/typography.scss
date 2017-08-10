@@ -72,7 +72,36 @@ article.content {
         font-family: $font_sans_content;
         font-size: 18px;
         line-height: $gap;
-        margin: 0 0 $gap;
+        // margin: 0 0 $gap;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #666;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        &.dark {
+            color: $color_dark;
+        }
+        &.mid {
+            color: $color_mid;
+        }
+        &.rule {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        &.spacer {
+            margin-top: 50px;
+        }
+        &.caption {
+            font-size: 14px;
+            font-weight: 900;
+            color: #222;
+            margin-bottom: 40px;
+        }
     }
     p>a {
         color: $color_dark;
@@ -90,6 +119,12 @@ article.content {
             left: 0;
             z-index: -1;
         }
+    }
+    .abstract {
+        font-weight: 300;
+        margin-bottom: 50px;
+        color: #999;
+        font-size: 24px;
     }
     blockquote {
         border: none;
@@ -116,7 +151,7 @@ article.content {
         }
     }
     img {
-        margin-top: 10px; // line-height compensation
+        margin-top: 40px; // line-height compensation
         max-width: 100%;
         text-align: center;
     }
@@ -218,4 +253,70 @@ code {
 
 .orange {
     color: #e28642
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.pullquote {
+    width: 65%;
+    border-top: 8px solid #666;
+    border-bottom: 8px solid #666;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 26px;
+    color: #666;
+    &:before {
+        content: "\201C";
+        font-size: 32px;
+        top: -20px;
+    }
+    &:after {
+        content: '\201D';
+        font-size: 32px;
+        top: -20px;
+    }
+    &.right {
+        float: right;
+        margin-right: -100px;
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &.left {
+        float: left;
+        margin-left: -100px;
+        margin-right: 25px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    a.quotelink {
+        color: #e28642;
+        font-size: 16px;
+        vertical-align: middle;
+        &:after {
+            font-family: FontAwesome;
+            content: "\f08e";
+            padding-left: 5px;
+            vertical-align: middle;
+        }
+        &.right {
+            float: right;
+        }
+        &.left {
+            float: left
+        }
+    }
+    .quoter {
+        color: #aaa;
+        margin-top: 25px;
+        &.right {
+            float: right;
+        }
+        &.left {
+            float: left;
+        }
+    }
 }

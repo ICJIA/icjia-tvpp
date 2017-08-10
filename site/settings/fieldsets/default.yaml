@@ -22,4 +22,7 @@ fields:
     type: markdown
   content:
     type: markdown
+    container: main
     display: Content
+    cheatsheet: true
+    folder:

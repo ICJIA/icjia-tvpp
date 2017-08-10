@@ -32,6 +32,11 @@
         max-width: 700px;
         margin: 0 auto;
         z-index: 2;
+        &.page-content {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            max-width: 100%;
+        }
     }
     header {
         color: #fff;
@@ -97,17 +102,6 @@ section header {
     .meta .date {
         margin-top: 8px;
         float: right;
-    }
-}
-
-.section-things {
-    background: #f2f2f2;
-    section header {
-        padding: ($gap * 2) 0 $gap;
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto;
-        z-index: 2;
     }
 }
 
@@ -179,13 +173,13 @@ footer {
     }
     &.mobile {
         opacity: .7;
-        padding: 20px 15px 10px 15px;
+        padding: 40px 15px 10px 15px;
         text-align: center;
         width: 100%;
-        margin-top: 80px;
-        margin-bottom: 40px;
+        margin-top: 60px;
+        margin-bottom: 3px;
         font-size: 36px;
-        max-height: 400px;
+        max-height: 450px;
     }
     .homeHeader {
         h3,
@@ -220,6 +214,8 @@ footer {
     background: #ddd;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     border-right: 1px solid #ccc;
     color: #444;
@@ -242,8 +238,10 @@ footer {
 }
 
 .p-description {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .hoverBox {
@@ -262,23 +260,6 @@ footer {
         h6.entry-title {
             color: #e28642;
         }
-    }
-}
-
-.equal {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex: 1 0 auto;
-    >div[class*='col-'] {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        flex: 1 0 auto;
     }
 }
 
