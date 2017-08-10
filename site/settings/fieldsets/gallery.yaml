@@ -1,8 +1,12 @@
 title: Gallery
+taxonomies:
+  tags: true
+hide: true
 fields:
   title:
     type: title
     display: Title
+    localizable: true
   content:
     type: markdown
     display: Content

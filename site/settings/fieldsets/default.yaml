@@ -1,25 +1,21 @@
-title: Home
-hide: true
+title: Default Page
 taxonomies:
   tags: true
-create_title: TVPP Home
+create_title: ""
 fields:
   title:
     type: title
     display: Title
     localizable: true
-  splash:
+  hero_image:
     type: assets
-    max_files: 1
-    display: Splash image
+    display: Hero Image
     container: main
     folder: img
-  accent:
-    type: assets
     max_files: 1
-    display: Accent/Secondary image
-    container: main
-    folder: img
+  abstract:
+    display: Abstract
+    type: markdown
   content:
     type: markdown
     display: Content
