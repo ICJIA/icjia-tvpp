@@ -12,7 +12,7 @@ The Illinois Criminal Justice Information Authority’s Targeted Violence Preven
 
 The mission of TVPP is to help secure safer communities throughout Illinois. Our communities suffer from many forms of violence such as domestic violence, sexual assaults, bullying, and gang violence. Targeted violence inspired or justified by ideologies of hate (e.g. the Ku Klux Klan, ISIS, Neo-Nazi Skinheads, or Al Qaeda) is one more form of violence that plagues us. We deserve to live free of all forms of violence, but to do so we must work together.
 
-The Problem We Face Today
+## The Problem We Face Today
 Ideologically inspired targeted violence, which includes violent hate crimes and domestic terrorism, are not as common as other types of violent crime in our communities, but these particular types of violence have an enormous impact when they do occur. Furthermore, these acts of violence tear apart the social fabric of our diverse communities.
 
 Illinois is home to a number of active hate groups. According to FBI hate crimes data in 2014 there were 131 cases of reported hate crimes in Illinois. Of those, 101 were cases of intimidation, assault and aggravated assault. Even more staggering is the fact that, according to the Bureau of Justice Statistics, over half of hate crimes committed in the United States go unreported.
@@ -21,21 +21,20 @@ Across the country the FBI have over 1000 open investigations of individuals who
 
 The ideologies that inspire these violent crimes include white supremacy, anti-Semitism, anti-LGBTQ, and religiously violent inspired extremism to name a few. These ideologies are promoted by groups that are based in Illinois, and also by groups throughout the world who pollute our communities with their violent ideologies through social media and the Internet. When these violent ideologies result in violence in our communities, all Illinoisans suffer.
 
-Dabiq magazine cover
 The so-called Islamic State publishes an online propaganda magazine called “DABIQ” which is widely available on the internet. It is published in English as well as other languages.
 Prevention Through Partnerships
 ICJIA is responsible for promoting policies and programs across the state to prevent violence. TVPP leverages the knowledge and expertise of the ICJIA staff in violence prevention, research, and program management to help build and sustain targeted violence prevention programs at the community level.
 
 ICJIA has over 30 years of experience working with a wide cross section of community organizations, faith-based groups, and other agencies. These relationships serve as resources to support community and faith-based prevention and intervention programs that can work to keep our communities safe from acts of ideologically inspired targeted violence. Working together, TVPP and partners throughout Illinois can get ahead of ideologically inspired targeted violence before it becomes a bigger problem as it has in other U.S. jurisdictions as well as in other nations around the world.
 
-The Public Health Model
+## The Public Health Model
 The Targeted Violence Prevention Program promotes a public health approach to preventing ideologically inspired targeted violence. Working with community and faith-based organizations that wish to prevent such violence in their communities, TVPP helps to build and sustain community-led prevention and intervention programs that can help individuals before they engage in crimes of violence. TVPP is currently focused on the primary and secondary prevention components of the public health model.
 
-Primary Prevention. Generally speaking, primary prevention aims to prevent an injury or a disease before it occurs. This can be accomplished by preventing exposure to hazards that cause injuries or disease. In the context of preventing ideologically inspired targeted violence, primary prevention may include education on the risks posed by online propaganda sponsored by hate groups and terrorist organizations. Primary prevention can also include education that teaches individuals the value and benefits of using peaceful strategies to promote social change. It also includes activities that promote a positive, inclusive environment in our schools, places of worship, workplaces and the community at large.
+*Primary Prevention*. Generally speaking, primary prevention aims to prevent an injury or a disease before it occurs. This can be accomplished by preventing exposure to hazards that cause injuries or disease. In the context of preventing ideologically inspired targeted violence, primary prevention may include education on the risks posed by online propaganda sponsored by hate groups and terrorist organizations. Primary prevention can also include education that teaches individuals the value and benefits of using peaceful strategies to promote social change. It also includes activities that promote a positive, inclusive environment in our schools, places of worship, workplaces and the community at large.
 
 Community and faith-based organizations in some places may already be doing this important work. TVPP can help expand and improve this work, and in those communities where it is not in place, TVPP can help local organizations put these important programs into place.
 
-Secondary Prevention. When observable risk factors for injury or disease are detected early on, secondary prevention seeks to halt its progress and encourages strategies that prevent it from happening again. Secondary prevention efforts can help in the context of ideologically inspired targeted violence when a person is on a pathway to violence but has not yet committed a crime.
+*Secondary Prevention*. When observable risk factors for injury or disease are detected early on, secondary prevention seeks to halt its progress and encourages strategies that prevent it from happening again. Secondary prevention efforts can help in the context of ideologically inspired targeted violence when a person is on a pathway to violence but has not yet committed a crime.
 
 We cannot predict who will commit a violent crime. We can, however, use the knowledge gained through social science research on violence risk factors to promote a more focused approach to violence prevention.
 
