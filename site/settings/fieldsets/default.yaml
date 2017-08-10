@@ -1,5 +1,7 @@
 title: Default Page
-template: default
+_template:
+  type: hidden
+  default: page
 taxonomies:
   tags: true
 create_title: ""
