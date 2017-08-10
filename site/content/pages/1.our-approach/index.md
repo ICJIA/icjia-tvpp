@@ -1,4 +1,5 @@
 ---
+template: page
 title: Our Approach
 hero_image: /assets/img/tvpp-splash-02.jpg
 abstract: >

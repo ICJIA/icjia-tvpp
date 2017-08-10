@@ -1,11 +1,12 @@
 title: Default Page
-template:
-  type: hidden
-  default: page
+
 taxonomies:
   tags: true
 create_title: ""
 fields:
+  template:
+    type: template
+    default: page
   title:
     type: title
     display: Title
