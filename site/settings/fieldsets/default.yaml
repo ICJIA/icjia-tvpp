@@ -1,4 +1,5 @@
 title: Default Page
+template: page
 taxonomies:
   tags: true
 create_title: ""
