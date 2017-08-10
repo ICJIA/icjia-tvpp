@@ -1,12 +1,23 @@
 // The colors duke! The colors!
-$color_dark : #3c3c3c;
-$color_mid : #445566;
+$color_dark: #3c3c3c;
+$color_mid: #445566;
 $color_light: #b8b8b8;
 $color_teal: #005566;
 // Fontsicles
-$font_sans : 'Lato',
+
+/*$font_sans: 'Lato',
 sans-serif;
-$font_serif: 'Lora',
+*/
+
+
+/*
+$font_serif: 'Neuton',
 serif;
+*/
+
+$font_sans_head: 'Lato',
+sans-serif;
+$font_sans_content: 'Open Sans',
+sans-serif;
 $gap: 32px;
 $vertical-gap: 25px;

@@ -41,7 +41,7 @@
             margin-top: 200px;
         }
         h2 {
-            font-family: $font_serif;
+            font-family: $font_sans_head;
             font-style: italic;
             -webkit-font-smoothing: antialiased;
         }
@@ -64,7 +64,7 @@
         .name {
             color: #fff;
             margin: 5px 0;
-            font-family: $font_serif;
+            font-family: $font_sans_content;
             font-style: italic;
             font-size: 18px;
             text-transform: normal;
@@ -112,7 +112,7 @@ footer.page {
     padding: ($gap * 2) 0;
     text-align: center;
     p.copyright {
-        font-family: $font_sans;
+        font-family: $font_sans_head;
         font-weight: 900;
         font-size: 14px;
     }
@@ -137,10 +137,10 @@ footer.page {
 
 .read-more {
     margin-top: $gap * 3;
-    font-family: $font_sans;
+    font-family: $font_sans_content;
     text-align: center;
     display: block;
-    font-family: $font_sans;
+    font-family: $font_sans_content;
     color: $color_light;
     font-size: 13px;
     text-transform: uppercase;
@@ -295,5 +295,15 @@ footer.page {
     color: #fff;
     padding: 0;
     margin: 0;
-    margin-top: ($gap / 2)
+    margin-top: ($gap / 2);
+}
+
+.welcome-title,
+.welcome-description {
+    color: #fff !important;
+}
+
+.fullwidth {
+    margin: 0;
+    padding: 0
 }

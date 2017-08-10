@@ -1,9 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,400italic,900);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+/*$font_sans: 'Lato',
+sans-serif;
+*/
+/*
+$font_serif: 'Neuton',
+serif;
+*/
 body {
   background: #eee;
   color: #3c3c3c;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
@@ -75,7 +82,7 @@ body {
 }
 
 .hero header h2 {
-  font-family: "Lora", serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
   -webkit-font-smoothing: antialiased;
 }
@@ -101,7 +108,7 @@ body {
 .hero .meta .name {
   color: #fff;
   margin: 5px 0;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 18px;
   text-transform: normal;
@@ -178,10 +185,10 @@ footer.page p.tribute {
 
 .read-more {
   margin-top: 96px;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #b8b8b8;
   font-size: 13px;
   text-transform: uppercase;
@@ -335,8 +342,18 @@ footer.page p.tribute {
   margin-top: 16px;
 }
 
+.welcome-title,
+.welcome-description {
+  color: #fff !important;
+}
+
+.fullwidth {
+  margin: 0;
+  padding: 0;
+}
+
 input.giant {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 60px;
   font-weight: 300;
   color: #3c3c3c;
@@ -356,10 +373,15 @@ input.giant:focus, input.giant:active {
   box-shadow: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
-  letter-spacing: -.025em;
+  letter-spacing: 0em;
   margin: 0 0 32px -1px;
 }
 
@@ -395,13 +417,13 @@ h6 em {
 }
 
 .special {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 64px;
 }
 
 .special small {
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #b8b8b8;
   font-size: 13px;
   text-transform: uppercase;
@@ -421,7 +443,7 @@ section header h2 {
 }
 
 article.content p {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 32px;
   margin: 0 0 32px;
@@ -430,7 +452,7 @@ article.content p {
 article.content p > a {
   color: #3c3c3c;
   text-decoration: none;
-  text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   position: relative;
   white-space: nowrap;
 }
@@ -461,7 +483,8 @@ article.content blockquote p {
   text-align: center;
 }
 
-article.content ul, article.content ol {
+article.content ul,
+article.content ol {
   margin-bottom: 32px;
 }
 
@@ -499,7 +522,7 @@ article.content img.oversized {
 }
 
 article.content p.caption {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 14px;
   text-align: center;
@@ -517,7 +540,7 @@ article.content iframe {
 }
 
 .block h3 {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 900;
   margin: 0 0 5px;
@@ -525,7 +548,7 @@ article.content iframe {
 }
 
 .block p {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
@@ -557,7 +580,7 @@ article.content iframe {
 
 .meta {
   color: #b8b8b8;
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   margin: 0 0 64px;
 }
