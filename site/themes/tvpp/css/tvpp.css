@@ -562,15 +562,8 @@ article.content p > a {
   white-space: nowrap;
 }
 
-article.content p > a:after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  border-top: 1px solid #000;
-  content: "";
-  bottom: 0.1em;
-  left: 0;
-  z-index: -1;
+article.content p > a:hover {
+  color: #aaa;
 }
 
 article.content .abstract {
