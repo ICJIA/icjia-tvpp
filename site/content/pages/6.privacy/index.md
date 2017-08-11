@@ -6,13 +6,11 @@ tags: [ ]
 fieldset: default
 id: f9040d4a-4028-4e06-bf88-43ca7fbc677b
 ---
-# We respect your privacy​
+This is the web site of the **Illinois Targeted Violence Prevention Program**
 
-This is the web site of the Illinois Targeted Violence Prevention Program
+#### Our postal address: {.uppercase}
 
-**Our postal address:**
-
-Targeted Violence Prevention Program
+**Targeted Violence Prevention Program**
 
 Illinois Criminal Justice Information Authority
 
@@ -20,7 +18,7 @@ Illinois Criminal Justice Information Authority
 
 Chicago, Illinois 60606
 
-**Our phone number:**
+#### Our phone number: {.uppercase}
 
 312-793-7434
 

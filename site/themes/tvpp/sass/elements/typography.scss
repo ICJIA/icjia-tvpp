@@ -358,7 +358,7 @@ a {
 *
 */
 
-#body-content>p:nth-of-type(1):first-letter {
+.dropcap>p:nth-of-type(1):first-letter {
     color: orange;
     float: left;
     font-family: Georgia;

@@ -1,7 +1,8 @@
 ---
+title: Resources
 template: page
 is_hidden: false
-title: Resources
+add_dropcap: false
 abstract: >
   The Targeted Violence Prevention Program leverages existing resources that can benefit individuals
   and organizations seeking to build and sustain community-level programs to prevent ideologically

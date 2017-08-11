@@ -1,7 +1,8 @@
 ---
+title: Our Approach
 template: page
 is_hidden: false
-title: Our Approach
+add_dropcap: true
 hero_image: /assets/img/memorial.jpg
 abstract: >
   Ideologically inspired targeted violence harms all Illinoisans, and the perpetrators of these crimes

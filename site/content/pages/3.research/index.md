@@ -1,14 +1,16 @@
 ---
+title: Research
 template: page
 is_hidden: false
-title: Research
+add_dropcap: true
 hero_image: /assets/img/skinhead.jpg
 abstract: >
   The Targeted Violence Prevention Program at the Illinois Criminal Justice Information Authority
   works with scholars and researchers throughout the United States and abroad to make research on
   targeted violence prevention, violent online political extremism, and other relevant issues more
   accessible to individuals and organizations in Illinois.
-tags: [ ]
+tags:
+  - research
 fieldset: default
 id: e523c7bb-03c2-4be6-a827-b0880742637d
 ---

@@ -1,4 +1,4 @@
-title: Default Page
+title: Default TVPP Page
 taxonomies:
   tags: true
 create_title: ""
@@ -14,6 +14,10 @@ fields:
     display: Hide from navigation
     type: toggle
     default: true
+  add_dropcap:
+    display: Add a dropcap to first paragraph
+    type: toggle
+    default: false
   hero_image:
     type: assets
     display: Hero Image
