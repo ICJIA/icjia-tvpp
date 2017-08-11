@@ -2,7 +2,7 @@ body {
     background: #fff;
     color: $color_dark;
     font-family: $font_sans_content;
-    font-size: 18px;
+    font-size: $body_font_size;
 }
 
 .inline {

@@ -1,16 +1,19 @@
 title: Default Page
-
 taxonomies:
   tags: true
 create_title: ""
 fields:
-  template:
-    type: template
-    default: page
   title:
     type: title
     display: Title
     localizable: true
+  template:
+    type: template
+    default: page
+  is_hidden:
+    display: Hide from navigation
+    type: toggle
+    default: true
   hero_image:
     type: assets
     display: Hero Image
@@ -25,4 +28,3 @@ fields:
     container: main
     display: Content
     cheatsheet: true
-    folder:

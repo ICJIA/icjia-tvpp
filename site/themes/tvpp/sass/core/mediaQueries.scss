@@ -50,8 +50,12 @@
     .navbar-brand {
         font-size: 10px !important
     }
-    .pullquote {
-        display: none
+    .pullquote.left,
+    .pullquote.right {
+        width: 100% !important;
+        float: left !important;
+        margin-right: 0px !important;
+        margin-left: 0px;
     }
     img.yank-left {
         max-width: 100%;
@@ -77,8 +81,12 @@
     .navbar-brand {
         font-size: 8px !important
     }
-    .pullquote {
-        display: none
+    .pullquote.left,
+    .pullquote.right {
+        width: 100% !important;
+        float: left !important;
+        margin-right: 0px !important;
+        margin-left: 0px;
     }
     img.yank-left {
         max-width: 100%;
@@ -104,20 +112,24 @@
     .navbar-brand {
         font-size: 8px !important
     }
-    .pullquote {
-        display: none
+    .pullquote.left,
+    .pullquote.right {
+        width: 100% !important;
+        float: left !important;
+        margin-right: 0px !important;
+        margin-left: 0px;
     }
     img.yank-left {
         max-width: 100%;
         float: left;
-        margin-left: 10px !important;
-        margin-right: 0 !important;
+        margin-left: 0px !important;
+        margin-right: 10px !important;
     }
     img.yank-right {
         max-width: 100%;
         float: right !important;
-        margin-right: 0 !important;
-        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-left: 0 !important;
     }
 }
 

@@ -132,6 +132,7 @@ section header {
 footer {
     background: #191f28;
     margin-top: $section-gap;
+    font-family: $font_sans_head;
     a {
         color: #fff;
         &:hover {
@@ -282,6 +283,7 @@ footer {
     margin-top: $section-gap;
     border-top: $section-rule;
     border-bottom: $section-rule;
+    margin-top: 3px !important;
 }
 
 .welcome-title,

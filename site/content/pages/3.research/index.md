@@ -1,5 +1,6 @@
 ---
 template: page
+is_hidden: false
 title: Research
 hero_image: /assets/img/skinhead.jpg
 abstract: >

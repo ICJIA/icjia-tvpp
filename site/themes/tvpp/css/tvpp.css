@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:200,400,300,400italic,900);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 /*$font_sans: 'Lato',
 sans-serif;
 */
@@ -11,7 +12,7 @@ serif;
 body {
   background: #fff;
   color: #3c3c3c;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 18px;
 }
 
@@ -120,7 +121,7 @@ body {
 .hero .meta .name {
   color: #fff;
   margin: 5px 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 18px;
   text-transform: normal;
   -webkit-font-smoothing: antialiased;
@@ -156,10 +157,10 @@ section header .meta .date {
 
 .read-more {
   margin-top: 96px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   text-align: center;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   color: #b8b8b8;
   font-size: 13px;
   text-transform: uppercase;
@@ -180,6 +181,7 @@ section header .meta .date {
 footer {
   background: #191f28;
   margin-top: 3px;
+  font-family: "Lato", sans-serif;
 }
 
 footer a {
@@ -330,6 +332,7 @@ footer a:hover {
   margin-top: 3px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  margin-top: 3px !important;
 }
 
 .welcome-title,
@@ -386,7 +389,7 @@ footer a:hover {
 }
 
 input.giant {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 60px;
   font-weight: 300;
   color: #3c3c3c;
@@ -463,14 +466,14 @@ h6 em,
 }
 
 .special {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   margin-bottom: 35.2px;
   text-transform: uppercase;
 }
 
 .special small {
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #b8b8b8;
   font-size: 13px;
   text-transform: uppercase;
@@ -490,7 +493,7 @@ section header h2 {
 }
 
 article.content p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 18px;
   line-height: 32px;
 }
@@ -567,10 +570,11 @@ article.content p > a:hover {
 }
 
 article.content .abstract {
-  font-weight: 300;
+  font-weight: 200;
   margin-bottom: 50px;
-  color: #999;
-  font-size: 24px;
+  color: #aaa;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif !important;
 }
 
 article.content ul,
@@ -599,6 +603,15 @@ article.content img.yank-left {
   margin-right: 32px;
 }
 
+article.content img.flush-left {
+  max-width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
 article.content img.yank-right {
   max-width: 30%;
   float: right;
@@ -612,7 +625,7 @@ article.content img.oversized {
 }
 
 article.content p.caption {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-style: italic;
   font-size: 14px;
   text-align: center;
@@ -630,7 +643,7 @@ article.content iframe {
 }
 
 .block h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 24px;
   font-weight: 900;
   margin: 0 0 5px;
@@ -638,7 +651,7 @@ article.content iframe {
 }
 
 .block p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
@@ -670,7 +683,7 @@ article.content iframe {
 
 .meta {
   color: #b8b8b8;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lora", serif;
   font-size: 12px;
   margin: 0 0 64px;
 }
@@ -800,6 +813,22 @@ a.no-underline {
   padding-left: 15px;
 }
 
+/* **********************
+*
+* Dropcap for articles/blog posts
+*
+*/
+#body-content > p:nth-of-type(1):first-letter {
+  color: orange;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
 .gallery header {
   padding: 64px 0 32px;
   text-align: center;
@@ -862,7 +891,7 @@ a.no-underline {
 }
 
 .navbar-tvpp .nav .active a {
-  color: #3c3c3c;
+  color: #e28642;
   font-weight: bold;
   position: relative;
 }
@@ -877,10 +906,11 @@ a.no-underline {
 .navbar-tvpp .navbar-brand {
   color: #3c3c3c;
   font-weight: 900;
+  font-family: "Lato", sans-serif;
   font-size: 18px;
   height: 60px;
   padding: 20px 15px;
-  letter-spacing: -.05em;
+  letter-spacing: 0em;
 }
 
 .navbar-tvpp .navbar-form {
@@ -1047,8 +1077,12 @@ img.zoom-img {
   .navbar-brand {
     font-size: 10px !important;
   }
-  .pullquote {
-    display: none;
+  .pullquote.left,
+  .pullquote.right {
+    width: 100% !important;
+    float: left !important;
+    margin-right: 0px !important;
+    margin-left: 0px;
   }
   img.yank-left {
     max-width: 100%;
@@ -1072,8 +1106,12 @@ img.zoom-img {
   .navbar-brand {
     font-size: 8px !important;
   }
-  .pullquote {
-    display: none;
+  .pullquote.left,
+  .pullquote.right {
+    width: 100% !important;
+    float: left !important;
+    margin-right: 0px !important;
+    margin-left: 0px;
   }
   img.yank-left {
     max-width: 100%;
@@ -1097,20 +1135,24 @@ img.zoom-img {
   .navbar-brand {
     font-size: 8px !important;
   }
-  .pullquote {
-    display: none;
+  .pullquote.left,
+  .pullquote.right {
+    width: 100% !important;
+    float: left !important;
+    margin-right: 0px !important;
+    margin-left: 0px;
   }
   img.yank-left {
     max-width: 100%;
     float: left;
-    margin-left: 10px !important;
-    margin-right: 0 !important;
+    margin-left: 0px !important;
+    margin-right: 10px !important;
   }
   img.yank-right {
     max-width: 100%;
     float: right !important;
-    margin-right: 0 !important;
-    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-left: 0 !important;
   }
 }
 

@@ -13,7 +13,7 @@
 
         <div class="collapse navbar-collapse" id="nav-main">
             <ul class="nav navbar-nav">
-                {{ nav from="/" include_home="true" scope="tag" }}
+                {{ nav from="/" include_home="true" scope="tag" is_hidden:isnt="true"}}
                 <li{{ if is_current or is_parent }} class="active" {{ /if }}>
                     <a href="{{ url }}">{{ tag:nav_title or title }}
                         </a>

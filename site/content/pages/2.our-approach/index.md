@@ -1,5 +1,6 @@
 ---
 template: page
+is_hidden: false
 title: Our Approach
 hero_image: /assets/img/memorial.jpg
 abstract: >

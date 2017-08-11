@@ -1,11 +1,12 @@
 ---
 template: page
+is_hidden: false
 title: Contact
 tags: [ ]
 fieldset: default
 id: de6221a5-1919-47ca-8d1f-2092db09a1a5
 ---
-Junaid M. Afeef was named director of the Targeted Violence Prevention Program at the [ICJIA](http://www.icjia.state.il.us) in February 2016. Immediately prior to leading TVPP, Mr. Afeef was acting general counsel at ICJIA. Mr. Afeef has over two decades of experience in the criminal justice system. Early in his career he worked in the Juvenile Justice/Child Protection Division of the Cook County Public Defender’s Office. He continued working with parents and children as a bar attorney in solo private practice alongside his criminal defense and civil rights work. Mr. Afeef is very active in civic work. He co-founded the Muslim Bar Association of Chicago in 1998, and has served on various boards of religious, civic, and government entities.
+![Junaid Afeef](/assets/img/jafeef.jpg){.flush-left} Junaid M. Afeef was named director of the Targeted Violence Prevention Program at the [ICJIA](http://www.icjia.state.il.us) in February 2016. Immediately prior to leading TVPP, Mr. Afeef was acting general counsel at ICJIA. Mr. Afeef has over two decades of experience in the criminal justice system. Early in his career he worked in the Juvenile Justice/Child Protection Division of the Cook County Public Defender’s Office. He continued working with parents and children as a bar attorney in solo private practice alongside his criminal defense and civil rights work. Mr. Afeef is very active in civic work. He co-founded the Muslim Bar Association of Chicago in 1998, and has served on various boards of religious, civic, and government entities.
 
 Mr. Afeef served as the executive director of the Council of Islamic Organizations of Greater Chicago in 2008 and 2009 where he focused on promoting civic engagement and interfaith dialogue. Mr. Afeef is a fellow with the American Muslim Civic Leadership Institute at the University of Southern California. He is also a partner at the Truman National Security Project. Mr. Afeef’s commentary on domestic terrorism and countering violent extremism (CVE) has appeared in the Chicago Tribune and in numerous online publications and journals.
 
@@ -51,3 +52,4 @@ Chicago, Illinois 60606
 T: 312-793-7434
 
 E: [junaid.afeef@illinois.gov](junaid.afeef@illinois.gov)
+

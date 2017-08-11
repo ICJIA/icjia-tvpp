@@ -1,3 +1,8 @@
+<style>
+
+</style>
+
+
 <section class="hero">
     {{ if hero_image}}
     <div class="hero-background" style="background-image: url({{ hero_image }})">
@@ -16,8 +21,10 @@
                 <div class="col-md-8">
                     <h1 class="spacer dark rule h2" style="text-transform: uppercase">{{title }}</h1>
                     <div class="abstract">{{abstract}}</div>
+                    <div id="body-content">
 
-                    {{ content }}
+                        {{ content }}
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,6 +4,11 @@ taxonomies:
   tags: true
 create_title: TVPP Home
 fields:
+  is_hidden:
+    display: Hide page from navbar?
+    type: toggle
+    display: Hide from navigation
+    default: true
   title:
     type: title
     display: Title
