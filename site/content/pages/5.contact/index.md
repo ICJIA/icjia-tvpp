@@ -19,7 +19,7 @@ Mr. Afeef served as the executive director of the Council of Islamic Organizatio
 
 ---
 
-**Partner with TVPP and Build Greater Community Resilience**
+#### Partner with TVPP and Build Greater Community Resilience
 
 The Illinois Targeted Violence Prevention Program offers a public health approach to engaging communities in the prevention of violence motivated or inspired by political, social, religious, or personal ideologies.
 
@@ -41,7 +41,7 @@ TVPP is committed to preventing all forms of ideologically inspired targeted vio
 
 ---
 
-**Targeted Violence Prevention Program**
+#### Targeted Violence Prevention Program
 
 Illinois Criminal Justice Information Authority
 
