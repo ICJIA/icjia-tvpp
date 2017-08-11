@@ -1,13 +1,42 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+
+
 /*==========  Non-Mobile First Method  ==========*/
 
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {
-    .pullquote {
-        display: none
-    }
-}
+@media only screen and (max-width: 1200px) {}
 
 
 /* Medium Devices, Desktops */
@@ -17,14 +46,122 @@
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 10px !important
+    }
+    .pullquote {
+        display: none
+    }
+    img.yank-left {
+        max-width: 100%;
+        float: left;
+        margin-left: 10px !important;
+        margin-right: 0 !important;
+    }
+    img.yank-right {
+        max-width: 100%;
+        float: right !important;
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+    }
+}
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .hero-background {
+        display: none
+    }
+    .navbar-brand {
+        font-size: 8px !important
+    }
+    .pullquote {
+        display: none
+    }
+    img.yank-left {
+        max-width: 100%;
+        float: left;
+        margin-left: 10px !important;
+        margin-right: 0 !important;
+    }
+    img.yank-right {
+        max-width: 100%;
+        float: right !important;
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+    }
+}
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    .hero-background {
+        display: none
+    }
+    .navbar-brand {
+        font-size: 8px !important
+    }
+    .pullquote {
+        display: none
+    }
+    img.yank-left {
+        max-width: 100%;
+        float: left;
+        margin-left: 10px !important;
+        margin-right: 0 !important;
+    }
+    img.yank-right {
+        max-width: 100%;
+        float: right !important;
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+    }
+}
+
+
+/* ********************************************************************************
+*
+* NAVBAR
+*
+*/
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+}

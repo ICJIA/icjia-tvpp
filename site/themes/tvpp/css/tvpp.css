@@ -182,6 +182,15 @@ footer {
   margin-top: 3px;
 }
 
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
 #copyright {
   color: #bbb;
 }
@@ -219,13 +228,14 @@ footer {
 
 .homeHero.mobile {
   opacity: .7;
-  padding: 40px 15px 10px 15px;
+  padding: 80px 15px 10px 15px;
   text-align: center;
   width: 100%;
   margin-top: 60px;
   margin-bottom: 3px;
   font-size: 36px;
-  max-height: 450px;
+  min-height: 350px !important;
+  height: 500px;
 }
 
 .homeHero .homeHeader h3,
@@ -312,7 +322,7 @@ footer {
 }
 
 /* --> Welcome */
-#home-welcome {
+.home-welcome {
   background: #39404c;
   color: #fff;
   padding: 0;
@@ -397,44 +407,57 @@ input.giant:focus, input.giant:active {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   letter-spacing: 0em;
   margin: 0 0 32px -1px;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 60px;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 42px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 28px;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 20px;
 }
 
-h5 {
+h5,
+.h5 {
   font-size: 16px;
 }
 
-h6 {
+h6,
+.h6 {
   font-size: 12px;
   letter-spacing: .15em;
   text-transform: uppercase;
 }
 
-h6 em {
+h6 em,
+.h6 em {
   color: #b8b8b8;
   font-style: normal;
 }
@@ -533,10 +556,9 @@ article.content h6.caption {
 }
 
 article.content p > a {
-  color: #3c3c3c;
-  text-decoration: none;
+  color: #e28642;
+  text-decoration: none !important;
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-  position: relative;
   white-space: nowrap;
 }
 
@@ -556,21 +578,6 @@ article.content .abstract {
   margin-bottom: 50px;
   color: #999;
   font-size: 24px;
-}
-
-article.content blockquote {
-  border: none;
-  padding: 0;
-  margin: 0;
-  margin: 0 -160px 32px -160px;
-}
-
-article.content blockquote p {
-  font-size: 28px;
-  font-style: italic;
-  line-height: 1.5;
-  margin: 0;
-  text-align: center;
 }
 
 article.content ul,
@@ -780,6 +787,26 @@ code {
   float: left;
 }
 
+blockquote {
+  border-left: 2px solid #ccc;
+}
+
+hr.spacer {
+  border: 0px;
+}
+
+a {
+  color: #e28642;
+}
+
+a.no-underline {
+  text-decoration: none !important;
+}
+
+.spacer-left {
+  padding-left: 15px;
+}
+
 .gallery header {
   padding: 64px 0 32px;
   text-align: center;
@@ -799,7 +826,7 @@ code {
 
 .navbar-tvpp {
   background: #fff;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0;
   min-height: 60px;
 }
@@ -808,14 +835,13 @@ code {
   color: #b8b8b8;
   font-family: "Lato", sans-serif;
   font-size: 12px;
-  font-weight: 900;
   overflow: hidden;
 }
 
 .navbar-tvpp .nav a {
   color: #b8b8b8;
   letter-spacing: .1em;
-  margin-left: 20px;
+  margin-left: 32px;
   padding: 20px 0;
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
@@ -888,16 +914,6 @@ code {
 
 .navbar-toggle .icon-bar {
   background: #aaa;
-}
-
-.navbar-brand-mobile {
-  color: #3c3c3c;
-  font-weight: 900;
-  font-size: 10px !important;
-  height: 60px;
-  padding: 20px 15px;
-  letter-spacing: -.05em;
-  margin-top: 20px;
 }
 
 .tags {
@@ -1021,17 +1037,131 @@ img.zoom-img {
   cursor: default;
 }
 
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
 /*==========  Non-Mobile First Method  ==========*/
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 10px !important;
+  }
   .pullquote {
     display: none;
   }
+  img.yank-left {
+    max-width: 100%;
+    float: left;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
+  img.yank-right {
+    max-width: 100%;
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+  }
 }
 
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .hero-background {
+    display: none;
+  }
+  .navbar-brand {
+    font-size: 8px !important;
+  }
+  .pullquote {
+    display: none;
+  }
+  img.yank-left {
+    max-width: 100%;
+    float: left;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
+  img.yank-right {
+    max-width: 100%;
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+  }
+}
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .hero-background {
+    display: none;
+  }
+  .navbar-brand {
+    font-size: 8px !important;
+  }
+  .pullquote {
+    display: none;
+  }
+  img.yank-left {
+    max-width: 100%;
+    float: left;
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
+  img.yank-right {
+    max-width: 100%;
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+  }
+}
+
+/* ********************************************************************************
+*
+* NAVBAR
+*
+*/
+@media (max-width: 1200px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,
+  .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
+}
 
 /*# sourceMappingURL=tvpp.css.map */

@@ -68,13 +68,13 @@ id: db0ae4e3-4f10-4802-bc40-0b880cbf02c7
 
 
 
-<div class="container-fluid" style="background: #39404c" id="home-welcome">
+<div class="container-fluid fullwidth hidden-xs hiddenn-sm home-welcome" style="background: #39404c" id="home-welcome">
 
   <div class="row">
-    <div class="col-md-5 fullwidth" style="background: url({{accent}}) no-repeat center center !important; background-size: cover  !important; height: 550px;">
+    <div class="col-md-5 fullwidth " style="background: url({{accent}}) no-repeat center center !important; background-size: cover  !important; height: 550px;">
       
   </div>
-    <div class="col-md-7 fullwidth" style="padding: 15px 35px; font-size: 18px;">
+    <div class="col-sm-12 col-xs-12 col-md-7 fullwidth" style="margin: 0; padding: 0; padding: 15px 35px; font-size: 18px;">
       <h1 class="h3" style="text-transform: uppercase; font-weight: 900; border-bottom: 1px solid #fff; padding-bottom: 8px; margin-bottom: 20px">The Illinois Targeted Violence Prevention Program</h1>
             <p >The Illinois Criminal Justice Information Authority’s Targeted Violence Prevention Program (TVPP) uses a public health approach to preventing ideologically inspired targeted violence.  TVPP works with interested communities in building and sustaining community-level programs that can prevent individuals from being recruited to commit ideologically inspired targeted violence, and to help off-ramp individuals who have begun down the path ideologically inspired targeted violence but have not yet committed a crime.</p>
 
@@ -83,9 +83,24 @@ Ideologically inspired targeted violence is a low frequency/high impact crime.  
 
 <p>Illinois is home to 23 active hate groups, and in 2014 there have were 131 cases of hate crimes in the state.  Of those, 101 were cases of intimidation, assault and aggravated assault. Between March 2014 and April 2016 there were 5 individuals from Illinois charged with ISIS-related offenses.</p>
 
-    </div>
+  </div>
   </div>
 
+  
+
+</div>
+
+<div class="container-fluid fullwidth home-welcome hidden-md hidden-lg" style="background: #39404c" id="home-welcome">
+<div class="col-sm-12" style="margin: 0; padding: 0; padding: 15px 35px; font-size: 18px;">
+      <h1 class="h3" style="text-transform: uppercase; font-weight: 900; border-bottom: 1px solid #fff; padding-bottom: 8px; margin-bottom: 20px">The Illinois Targeted Violence Prevention Program</h1>
+            <p >The Illinois Criminal Justice Information Authority’s Targeted Violence Prevention Program (TVPP) uses a public health approach to preventing ideologically inspired targeted violence.  TVPP works with interested communities in building and sustaining community-level programs that can prevent individuals from being recruited to commit ideologically inspired targeted violence, and to help off-ramp individuals who have begun down the path ideologically inspired targeted violence but have not yet committed a crime.</p>
+
+<p>
+Ideologically inspired targeted violence is a low frequency/high impact crime.  Whether it takes the form of domestic terrorism or violent hate crimes, it is a scourge on our society, and it strains the healthy social cohesion essential to our diverse communities.</p>
+
+<p>Illinois is home to 23 active hate groups, and in 2014 there have were 131 cases of hate crimes in the state.  Of those, 101 were cases of intimidation, assault and aggravated assault. Between March 2014 and April 2016 there were 5 individuals from Illinois charged with ISIS-related offenses.</p>
+
+  </div>
 </div>
 
 <div id="blog-posts">

@@ -19,6 +19,9 @@ class OldTags extends Tags
             return;
         }
 
+        // Sanitize.
+        $value = e($value);
+
         // If it's a tag pair, we'll wangjangle the output a little to make it easier for the developer.
         if ($this->isPair) {
             $this->content = '{{'.$var.'}}' . $this->content . '{{/'.$var.'}}';

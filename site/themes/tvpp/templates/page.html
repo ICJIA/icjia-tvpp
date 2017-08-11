@@ -1,16 +1,20 @@
 <section class="hero">
-
+    {{ if hero_image}}
     <div class="hero-background" style="background-image: url({{ hero_image }})">
         <div class="overlay"></div>
 
     </div>
+    <div style="margin-top: 60px" class="hidden-sm hidden-md hidden-lg"></div>
+    {{ else }}
+    <div style="margin-top: 60px"></div>
+    {{/if}}
 
     <article class="content page-content">
         <div class="container">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <h1 class="spacer dark rule" style="text-transform: uppercase">{{title }}</h1>
+                    <h1 class="spacer dark rule h2" style="text-transform: uppercase">{{title }}</h1>
                     <div class="abstract">{{abstract}}</div>
 
                     {{ content }}

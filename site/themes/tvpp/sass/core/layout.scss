@@ -132,6 +132,13 @@ section header {
 footer {
     background: #191f28;
     margin-top: $section-gap;
+    a {
+        color: #fff;
+        &:hover {
+            color: orange;
+            text-decoration: none;
+        }
+    }
 }
 
 #copyright {
@@ -173,13 +180,14 @@ footer {
     }
     &.mobile {
         opacity: .7;
-        padding: 40px 15px 10px 15px;
+        padding: 80px 15px 10px 15px;
         text-align: center;
         width: 100%;
         margin-top: 60px;
         margin-bottom: 3px;
         font-size: 36px;
-        max-height: 450px;
+        min-height: 350px !important;
+        height: 500px;
     }
     .homeHeader {
         h3,
@@ -266,7 +274,7 @@ footer {
 
 /* --> Welcome */
 
-#home-welcome {
+.home-welcome {
     background: #39404c;
     color: #fff;
     padding: 0;

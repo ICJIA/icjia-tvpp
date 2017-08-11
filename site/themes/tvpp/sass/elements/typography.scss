@@ -1,36 +1,48 @@
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
     font-family: $font_sans_head;
     font-weight: 900;
     letter-spacing: 0em;
     margin: 0 0 $gap -1px;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 60px;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 42px;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 28px;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 20px;
 }
 
-h5 {
+h5,
+.h5 {
     font-size: 16px;
 }
 
-h6 {
+h6,
+.h6 {
     font-size: 12px;
     letter-spacing: .15em;
     text-transform: uppercase;
@@ -104,10 +116,10 @@ article.content {
         }
     }
     p>a {
-        color: $color_dark;
-        text-decoration: none;
+        color: $color_orange;
+        text-decoration: none !important;
         text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-        position: relative;
+        // position: relative;
         white-space: nowrap;
         &:after {
             display: block;
@@ -125,19 +137,6 @@ article.content {
         margin-bottom: 50px;
         color: #999;
         font-size: 24px;
-    }
-    blockquote {
-        border: none;
-        padding: 0;
-        margin: 0;
-        margin: 0 -160px $gap -160px;
-        p {
-            font-size: 28px;
-            font-style: italic;
-            line-height: 1.5;
-            margin: 0;
-            text-align: center;
-        }
     }
     ul,
     ol {
@@ -319,4 +318,23 @@ code {
             float: left;
         }
     }
+}
+
+blockquote {
+    border-left: 2px solid #ccc;
+}
+
+hr.spacer {
+    border: 0px
+}
+
+a {
+    color: $color_orange;
+    &.no-underline {
+        text-decoration: none !important;
+    }
+}
+
+.spacer-left {
+    padding-left: 15px;
 }

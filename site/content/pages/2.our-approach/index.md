@@ -1,7 +1,7 @@
 ---
 template: page
 title: Our Approach
-hero_image: /assets/img/tvpp-splash-02.jpg
+hero_image: /assets/img/memorial.jpg
 abstract: >
   Ideologically inspired targeted violence harms all Illinoisans, and the perpetrators of these crimes
   come from all walks of life, many different backgrounds, and from many different communities.
