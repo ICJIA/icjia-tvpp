@@ -1,22 +1,15 @@
-<section class="regular">
+<section class="regular" style="margin-top: 50px">
 
     <header>
-        <h1>{{ title }}</h1>
-        <h2>{{ content }}</h2>
+        <h1 class="h2 text-center" style="text-transform: uppercase">Blog posts filed under:</h1>
+        <!-- <h2>{{ content }}</h2> -->
+        <h2 class="h3 text-center" style="text-transform: uppercase; color: #aaa;">{{ title }}</h2>
     </header>
 
-    <article class="list">
-        {{ collection:blog taxonomy="true" paginate="true" as="posts" limit="10" }}
-            {{ if no_results }}
-                <p>No "{{ title }}" posts.</p>
-            {{ /if }}
-
-            {{ posts scope="tag" }}
-                {{ partial:block }}
-            {{ /posts }}
-
-            {{ partial:pagination }}
-        {{ /collection:blog }}
+    <article class="list" style="margin-top: 70px">
+        {{ collection:blog taxonomy="true" paginate="true" as="posts" limit="10" }} {{ if no_results }}
+        <p>No "{{ title }}" posts.</p>
+        {{ /if }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
     </article>
 
 </section>
