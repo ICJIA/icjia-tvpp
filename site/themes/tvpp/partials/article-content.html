@@ -1,0 +1,13 @@
+<article class="content">
+
+    {{ if intro_image }}
+    <p><img src="{{ intro_image }}" class="intro-image"></p>
+    {{ /if }} {{ content }}
+
+
+    <ul class="tags">
+        {{ tags }}
+        <li><a href="{{ url }}" class="tag">{{ title }}</a></li>
+        {{ /tags }}
+    </ul>
+</article>

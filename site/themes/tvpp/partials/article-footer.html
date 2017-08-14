@@ -1,0 +1,6 @@
+<div class="list article-footer" style="background: #eee;">
+    <div class="regular">
+        <h6>Recent <em>news & updates</em></h6>
+        {{ collection:next in="blog" limit="2" url:not="{url}"}} {{ partial:block }} {{ /collection:next }}
+    </div>
+</div>

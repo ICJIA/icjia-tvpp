@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9ef25840c32642a0b51ed08e7504640d
+class ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -2545,7 +2545,6 @@ class ComposerStaticInit9ef25840c32642a0b51ed08e7504640d
         'Statamic\\Addons\\NotFound\\NotFoundTags' => __DIR__ . '/../..' . '/bundles/NotFound/NotFoundTags.php',
         'Statamic\\Addons\\OAuth\\OAuthTags' => __DIR__ . '/../..' . '/bundles/OAuth/OAuthTags.php',
         'Statamic\\Addons\\Obfuscate\\ObfuscateTags' => __DIR__ . '/../..' . '/bundles/Obfuscate/ObfuscateTags.php',
-        'Statamic\\Addons\\Old\\OldTags' => __DIR__ . '/../..' . '/bundles/Old/OldTags.php',
         'Statamic\\Addons\\Pages\\PagesFieldtype' => __DIR__ . '/../..' . '/bundles/Pages/PagesFieldtype.php',
         'Statamic\\Addons\\Pages\\PagesTags' => __DIR__ . '/../..' . '/bundles/Pages/PagesTags.php',
         'Statamic\\Addons\\Parent\\ParentTags' => __DIR__ . '/../..' . '/bundles/Parent/ParentTags.php',
@@ -3631,10 +3630,10 @@ class ComposerStaticInit9ef25840c32642a0b51ed08e7504640d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9ef25840c32642a0b51ed08e7504640d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9ef25840c32642a0b51ed08e7504640d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit9ef25840c32642a0b51ed08e7504640d::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit9ef25840c32642a0b51ed08e7504640d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -2150,7 +2150,6 @@ return array(
     'Statamic\\Addons\\NotFound\\NotFoundTags' => $baseDir . '/bundles/NotFound/NotFoundTags.php',
     'Statamic\\Addons\\OAuth\\OAuthTags' => $baseDir . '/bundles/OAuth/OAuthTags.php',
     'Statamic\\Addons\\Obfuscate\\ObfuscateTags' => $baseDir . '/bundles/Obfuscate/ObfuscateTags.php',
-    'Statamic\\Addons\\Old\\OldTags' => $baseDir . '/bundles/Old/OldTags.php',
     'Statamic\\Addons\\Pages\\PagesFieldtype' => $baseDir . '/bundles/Pages/PagesFieldtype.php',
     'Statamic\\Addons\\Pages\\PagesTags' => $baseDir . '/bundles/Pages/PagesTags.php',
     'Statamic\\Addons\\Parent\\ParentTags' => $baseDir . '/bundles/Parent/ParentTags.php',

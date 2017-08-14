@@ -1,17 +1,4 @@
-<!-- <style>
-    .content p:first-child:first-letter {
-        color: #903;
-        float: left;
-        font-family: Georgia;
-        font-size: 75px;
-        line-height: 60px;
-        padding-top: 4px;
-        padding-right: 8px;
-        padding-left: 3px;
-    }
-</style> -->
-
-{{if hero_image}}
+ {{if hero_image}}
 <section class="hero">
 
     <div class="hero-background" style="background-image: url({{ hero_image }})">
@@ -21,9 +8,7 @@
             <!-- {{ sub_title wrap="h2" }} -->
         </header>
         <div class="meta">
-            <!-- <div class="avatar">
-                <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/48.jpg" class="img-circle" width="48" height="48">
-            </div> -->
+
             <div class="name">
                 <a href="" class="name">{{ author_name }}</a>
             </div>
@@ -34,19 +19,7 @@
         </div>
     </div>
 
-    <article class="content">
-
-        {{ if intro_image }}
-        <p><img src="{{ intro_image }}" class="intro-image"></p>
-        {{ /if }} {{ content }}
-
-
-        <ul class="tags">
-            {{ tags }}
-            <li><a href="{{ url }}">{{ title }}</a></li>
-            {{ /tags }}
-        </ul>
-    </article>
+    {{partial:article-content}}
 </section>
 
 {{ else }}
@@ -57,7 +30,7 @@
     <header>
         <div class="meta clearfix">
             <div class="author">
-                <!-- <img src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/48.jpg" class="img-circle" width="48" height="48"> -->
+
                 <div class="pull-left">
                     <a href="" class="name">{{ author_name }}</a>
                     <span class="length">{{ content | read_time }} minute read</span>
@@ -71,18 +44,7 @@
         <!-- {{ sub_title wrap="h2" }} -->
     </header>
 
-    <article class="content">
-
-        {{ if intro_image }}
-        <p><img src="{{ intro_image }}" class="intro-image"></p>
-        {{ /if }} {{ content }}
-
-        <ul class="tags">
-            {{ tags }}
-            <li><a href="{{ url }}">{{ title }}</a></li>
-            {{ /tags }}
-        </ul>
-    </article>
+    {{partial:article-content}}
 
 </section>
 

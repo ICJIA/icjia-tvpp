@@ -46,7 +46,7 @@ class FieldsetController extends CpController
                 'uuid'     => $fieldset->name(), // keeping this here temporarily, just in case.
                 'edit_url' => $fieldset->editUrl()
             ];
-        })->filter()->all();
+        })->filter()->values()->all();
 
         return ['columns' => ['title'], 'items' => $fieldsets];
     }
