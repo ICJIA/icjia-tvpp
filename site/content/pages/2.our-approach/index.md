@@ -15,7 +15,7 @@ The Illinois Criminal Justice Information Authority’s Targeted Violence Preven
 
 <div class="pullquote left">
 The world is a dangerous place to live; not because of the people who are evil, but because of the people who don’t do anything about it.
-<div class="quoter left">Albert Einstein</div>
+<div class="quoter right">Albert Einstein</div>
 </div>
     
 The mission of TVPP is to help secure safer communities throughout Illinois. Our communities suffer from many forms of violence such as domestic violence, sexual assaults, bullying, and gang violence. Targeted violence inspired or justified by ideologies of hate (e.g. the Ku Klux Klan, ISIS, Neo-Nazi Skinheads, or Al Qaeda) is one more form of violence that plagues us. We deserve to live free of all forms of violence, but to do so we must work together.
