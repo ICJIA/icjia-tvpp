@@ -324,20 +324,19 @@ footer a:hover {
 }
 
 /* --> Welcome */
-.home-welcome {
-  background: #39404c;
-  color: #fff;
-  padding: 0;
-  margin: 0;
+.welcome {
   margin-top: 3px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  margin-top: 3px !important;
+  margin-bottom: 3px;
 }
 
-.welcome-title,
-.welcome-description {
-  color: #fff !important;
+.welcome-text {
+  color: #fff;
+  padding: 30px 40px;
+  font-family: "Lato", sans-serif;
+}
+
+.welcome-text a:hover {
+  color: #ccc;
 }
 
 .fullwidth {

@@ -11,7 +11,7 @@ id: de6221a5-1919-47ca-8d1f-2092db09a1a5
 
 Mr. Afeef served as the executive director of the Council of Islamic Organizations of Greater Chicago in 2008 and 2009 where he focused on promoting civic engagement and interfaith dialogue. Mr. Afeef is a fellow with the American Muslim Civic Leadership Institute at the University of Southern California. He is also a partner at the Truman National Security Project. Mr. Afeef’s commentary on domestic terrorism and countering violent extremism (CVE) has appeared in the Chicago Tribune and in numerous online publications and journals.
 
-(312) 793-7434 [<i class="fa fa-envelope" aria-hidden="true"></i> Email](mailto:junaid.afeef@illinois.gov){.no-underline .spacer-left}
+<i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;(312) 793-7434 [<i class="fa fa-envelope" aria-hidden="true"></i> Email](mailto:junaid.afeef@illinois.gov) {.no-underline .spacer-left}[<i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook](https://www.facebook.com/targetedviolenceprevention/) {.no-underline .spacer-left}
 
 #### Academic Background
 
