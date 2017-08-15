@@ -4,8 +4,8 @@
     <div class="hero-background" style="background-image: url({{ hero_image }})">
         <div class="overlay"></div>
         <header>
-            <h1>{{ title }}</h1>
-            <!-- {{ sub_title wrap="h2" }} -->
+            <h1>{{ title wrap="h1"}}</h1>
+
         </header>
         <div class="meta">
 
@@ -18,34 +18,52 @@
             </div>
         </div>
     </div>
-
-    {{partial:article-content}}
+    <div class="container-fluid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            {{partial:article-content}}
+        </div>
+    </div>
 </section>
 
 {{ else }}
 
 
 <section class="regular">
+    <div class="container-fluid">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <header>
+                <div class="meta clearfix">
+                    <div class="author">
 
-    <header>
-        <div class="meta clearfix">
-            <div class="author">
-
-                <div class="pull-left">
-                    <a href="" class="name">{{ author_name }}</a>
-                    <span class="length">{{ content | read_time }} minute read</span>
+                        <div class="pull-left">
+                            <a href="" class="name">{{ author_name }}</a>
+                            <span class="length">{{ content | read_time }} minute read</span>
+                        </div>
+                    </div>
+                    <div class="date">
+                        {{ date format="F j, Y" }}
+                    </div>
                 </div>
-            </div>
-            <div class="date">
-                {{ date format="F j, Y" }}
-            </div>
-        </div>
-        <h1>{{ title }}</h1>
-        <!-- {{ sub_title wrap="h2" }} -->
-    </header>
+                <h1>{{ title }}</h1>
+            </header>
 
-    {{partial:article-content}}
+            {{partial:article-content}}
+        </div>
+    </div>
 
 </section>
 
-{{/if}} {{ partial:article-footer }}
+{{/if}}
+
+<section class="article-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                {{partial:article-footer}}
+            </div>
+        </div>
+
+    </div>
+</section>

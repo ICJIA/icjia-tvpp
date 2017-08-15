@@ -1,8 +1,16 @@
 <article class="content">
 
     {{ if intro_image }}
-    <p><img src="{{ intro_image }}" class="intro-image"></p>
-    {{ /if }} {{ content }}
+    <p class="text-center"><img src="{{ intro_image }}" class="intro-"></p>
+    {{ if intro_image_caption}}
+    <div class="caption">{{intro_image_caption}}</div>
+    {{/if}} {{ /if }}
+
+    <div id="body-content" {{if add_dropcap=='true' }} class="dropcap" {{/if}}>
+
+        {{ content }}
+
+    </div>
 
 
     <ul class="tags">

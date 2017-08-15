@@ -5,12 +5,20 @@ fields:
     type: title
     display: Title
     localizable: true
+  add_dropcap:
+    display: Add a dropcap to first paragraph
+    type: toggle
+    default: false
+  intro_image_caption:
+    type: text
+    display: Intro image caption
   intro_image:
     type: assets
     display: Intro Image
     container: main
     folder: img
     max_files: 1
+  
   hero_image:
     type: assets
     display: Hero Image

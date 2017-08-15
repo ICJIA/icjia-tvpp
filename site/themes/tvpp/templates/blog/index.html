@@ -1,12 +1,15 @@
-<section class="regular" style="margin-top: 50px">
+<section class="regular extra">
 
-    <header>
+    <header class="text-center">
         <h1>{{ title }}</h1>
         <h2>{{ content }}</h2>
     </header>
-
-    <article class="list">
-        {{ collection:blog paginate="true" as="posts" limit="10" }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
-    </article>
+    <div class="container">
+        <div class="col-md-12">
+            <article class="list">
+                {{ collection:blog paginate="true" as="posts" limit="10" }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
+            </article>
+        </div>
+    </div>
 
 </section>

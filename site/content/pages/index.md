@@ -98,7 +98,7 @@ Ideologically inspired targeted violence is a low frequency/high impact crime.  
 
 <h1 class="centered">
         
-        News & Updates
+        TVPP Blog
   </h1>
   <article class="list">
           {{ collection:blog limit="3" scope="tag" }} {{ partial:block }} {{ /collection:blog }}

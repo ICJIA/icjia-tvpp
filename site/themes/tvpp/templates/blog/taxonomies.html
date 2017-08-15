@@ -1,16 +1,21 @@
 <section class="regular" style="margin-top: 60px">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h1>Tags</h1>
+                    <h2>Blog posts filed under:</h2>
+                </header>
 
-    <header>
-        <h1>Tags</h1>
-        <h2>Blog posts filed under:</h2>
-    </header>
+                <article class="list">
+                    <ul>
+                        {{ taxonomy:tags sort="title" }}
+                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        {{ /taxonomy:tags }}
+                    </ul>
+                </article>
 
-    <article class="list">
-        <ul>
-            {{ taxonomy:tags sort="title" }}
-            <li><a href="{{ url }}">{{ title }}</a></li>
-            {{ /taxonomy:tags }}
-        </ul>
-    </article>
-
+            </div>
+        </div>
+    </div>
 </section>
