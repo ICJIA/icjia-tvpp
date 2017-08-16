@@ -1,7 +1,45 @@
-app_key: eJL4iyjOiu3hqgT8yIeI6iZyXaLWiE6Z
+license_key: 425ed002-9c11-4acd-8a48-8f994a731a4b
 locales:
   en:
     full: en_US
     name: English
     url: https://tvpp.icjia.cloud/
-license_key: 425ed002-9c11-4acd-8a48-8f994a731a4b
+timezone: America/Chicago
+date_format: F jS, Y
+default_extension: md
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: eJL4iyjOiu3hqgT8yIeI6iZyXaLWiE6Z
+redactor:
+  - 
+    name: Standard
+    settings:
+      buttons:
+        - formatting
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - orderedlist
+        - html
+  - 
+    name: Basic
+    settings:
+      buttons:
+        - bold
+        - italic
+csrf_exclude: [ ]
+send_powered_by_header: true
+ensure_unique_ids: true

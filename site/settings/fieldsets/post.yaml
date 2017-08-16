@@ -25,6 +25,10 @@ fields:
     container: main
     folder: img
     max_files: 1
+  authors:
+    display: Authors
+    required: false
+    type: tags
   content:
     type: markdown
     display: Content
