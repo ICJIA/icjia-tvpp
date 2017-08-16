@@ -12,10 +12,16 @@
 
     </div>
 
-
-    <ul class="tags">
+    <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Tags</h5>
+    <ul class="tags" style="margin-top: -30px">
         {{ tags }}
         <li><a href="{{ url }}" class="tag">{{ title }}</a></li>
         {{ /tags }}
+    </ul>
+    <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Authors</h5>
+    <ul class="tags" style="margin-top: -30px">
+        {{ authors }}
+        <li style="padding-right: 15px"><a href="/biographies/{{ title | slugify }}" class="author">{{ title }}</a></li>
+        {{ /authors }}
     </ul>
 </article>

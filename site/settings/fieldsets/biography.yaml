@@ -7,6 +7,12 @@ fields:
     type: title
     display: Title
     localizable: true
+  headshot:
+    type: assets
+    max_files: 1
+    display: Headshot
+    container: main
+    folder: img
   content:
     type: markdown
     container: main

@@ -9,18 +9,18 @@
         </header>
         <div class="meta">
 
-            <div class="name">
-                <a href="" class="name">{{ author_name }}</a>
+            <div class="name" style="font-weight: 900;">
+                {{authors | sentence_list}}
             </div>
-            <div class="length" style="color: #eee">{{ content | read_time }} minute read</div>
-            <div class="date">
-                {{ date format="F j, Y" }}
+            <div class=" length " style="color: #eee ">{{ content | read_time }} minute read</div>
+            <div class="date ">
+                {{ date format="F j, Y " }}
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
+    <div class="container-fluid ">
+        <div class="col-md-2 "></div>
+        <div class="col-md-8 ">
             {{partial:article-content}}
         </div>
     </div>
@@ -29,26 +29,30 @@
 {{ else }}
 
 
-<section class="regular">
-    <div class="container-fluid">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
+<section class="regular ">
+    <div class="container-fluid ">
+        <div class="col-md-2 "></div>
+        <div class="col-md-8 ">
             <header>
-                <div class="meta clearfix">
-                    <div class="author">
+                <div class="meta clearfix ">
+                    <div class="author ">
 
-                        <div class="pull-left">
-                            <a href="" class="name">{{ author_name }}</a>
-                            <span class="length">{{ content | read_time }} minute read</span>
-                        </div>
+
+
+                        <span style="float: left; font-size: 16px; font-weight: 900; color: #000 ">
+                                {{authors | sentence_list}}
+                        
+                        </span>
+                        <br/>
+                        <span class="length " style="font-size: 16px">{{ content | read_time }} minute read</span>
+
                     </div>
-                    <div class="date">
-                        {{ date format="F j, Y" }}
+                    <div class="date ">
+                        {{ date format="F j, Y " }}
                     </div>
                 </div>
-                <h1>{{ title }}</h1>
+                <h1 style="margin-top: 25px">{{ title }}</h1>
             </header>
-
             {{partial:article-content}}
         </div>
     </div>
@@ -56,11 +60,10 @@
 </section>
 
 {{/if}}
-
-<section class="article-footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+<section class="article-footer ">
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-md-12 ">
                 {{partial:article-footer}}
             </div>
         </div>

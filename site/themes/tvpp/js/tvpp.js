@@ -1,2 +1,26 @@
-!function r(e,t,n){function i(o,f){if(!t[o]){if(!e[o]){var c="function"==typeof require&&require;if(!f&&c)return c(o,!0);if(u)return u(o,!0);var p=new Error("Cannot find module '"+o+"'");throw p.code="MODULE_NOT_FOUND",p}var s=t[o]={exports:{}};e[o][0].call(s.exports,function(r){var t=e[o][1][r];return i(t?t:r)},s,s.exports,r,e,t,n)}return t[o].exports}for(var u="function"==typeof require&&require,o=0;o<n.length;o++)i(n[o]);return i}({1:[function(r,e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var n={init:function(){return"TVPP Init"}};t.App=n},{}],2:[function(r,e,t){"use strict";r("./App.js")},{"./App.js":1}]},{},[2]);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var App = {
+
+    init: function init() {
+
+        return "TVPP Init";
+    }
+};
+
+exports.App = App;
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
+var _App = require('./App.js');
+
+console.log(_App.App.init());
+
+},{"./App.js":1}]},{},[2]);
+
 //# sourceMappingURL=tvpp.js.map
