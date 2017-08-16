@@ -1243,7 +1243,7 @@ img.zoom-img {
 * NAVBAR
 *
 */
-@media (max-width: 1200px) {
+@media (max-width: 1380px) {
   .navbar-header {
     float: none;
   }

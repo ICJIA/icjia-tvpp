@@ -3,33 +3,37 @@ title: Resources
 template: page
 is_hidden: false
 add_dropcap: false
-abstract: >
-  The Targeted Violence Prevention Program leverages existing resources that can benefit individuals
-  and organizations seeking to build and sustain community-level programs to prevent ideologically
-  inspired targeted violence. Institutions, organizations, and websites that may be useful to TVPP and
-  to our community partners will be shared here.
 tags: [ ]
 fieldset: default
 id: 3eb20940-a3eb-4f44-ac36-4dcd474fe243
 ---
+  The Targeted Violence Prevention Program leverages existing resources that can benefit individuals
+  and organizations seeking to build and sustain community-level programs to prevent ideologically
+  inspired targeted violence. Institutions, organizations, and websites that may be useful to TVPP and
+  to our community partners will be shared here.
+
+
 <style>
 table td.text-sm {
     font-size: 16px !important;
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif;*/
 }
 .resource-logo {
   padding-top: 10px; 
   padding-bottom: 10px;
   }
 </style>
-<table class='table table-borderless'>
+<table class='table table-borderless' style="margin-top: 50px;">
 				<tr>
 
 <td width="25%" style="vertical-align: middle;" class="text-center pad">
 							<a href="http://www.start.umd.edu/" target="_blank"><img src="/assets/img/start-logo.png" alt="Start"></a>
 					</td>
 
-<td class="text-sm" style="border-bottom: 1px solid #ccc; padding-bottom: 25px;padding-top: 25px;"><a href="http://www.start.umd.edu/" target="_blank">The National Consortium for the Study of Terrorism and Responses to Terrorism (START)</a> is a University of Maryland-based research and education center comprised of an international network of scholars committed to the scientific study of the causes and human consequences of terrorism in the United States and around the world. A Department of Homeland Security Center of Excellence, START supports the research efforts of leading social scientists at more than 50 academic and research institutions and serves as a leading resource for homeland security policymakers and practitioners.</td>
+<td class="text-sm" style="border-bottom: 1px solid #ccc; padding-bottom: 25px;padding-top: 25px;"><a href="http://www.start.umd.edu/" target="_blank">
+The National Consortium for the Study of Terrorism and Responses to Terrorism (START)</a> is a University of Maryland-based research and education center comprised of an international network of scholars committed to the scientific study of the causes and human consequences of terrorism in the United States and around the world. A Department of Homeland Security Center of Excellence, START supports the research efforts of leading social scientists at more than 50 academic and research institutions and serves as a leading resource for homeland security policymakers and practitioners.
+
+</td>
 
 </tr>
 
