@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b7d820a27850d9438a4ff1e7d253972a",
-    "content-hash": "824fa9f892cbe3a2fbbf1f1c0f1d8e3f",
+    "hash": "dfc010ab6eb699ef21d4ea333de42169",
+    "content-hash": "bfcfe95da2c97d1c04e1fc33008cd90e",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1518,6 +1518,24 @@
                 "twitter"
             ],
             "time": "2016-08-17 00:36:58"
+        },
+        {
+            "name": "marbles/sitemap",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../site/addons/Sitemap",
+                "reference": "4777f45f06d54171aef1d2f46c5d387be2b69e21",
+                "shasum": null
+            },
+            "type": "library",
+            "license": [
+                "MIT"
+            ],
+            "description": "Automatically add a Sitemap.xml to your website",
+            "transport-options": {
+                "symlink": false
+            }
         },
         {
             "name": "maximebf/debugbar",
@@ -5143,7 +5161,8 @@
         "league/flysystem-ziparchive": 20,
         "mustangostang/spyc": 20,
         "michelf/php-smartypants": 20,
-        "netcarver/textile": 20
+        "netcarver/textile": 20,
+        "marbles/sitemap": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
