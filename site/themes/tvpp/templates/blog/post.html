@@ -12,7 +12,7 @@
             <div class="name" style="font-weight: 900;">
                 {{authors | sentence_list}}
             </div>
-            <div class=" length " style="color: #eee ">{{ content | read_time }} minute read</div>
+            <div class="length" style="color: #eee ">{{ content | read_time }} minute read</div>
             <div class="date ">
                 {{ date format="F j, Y " }}
             </div>
@@ -39,12 +39,12 @@
 
 
 
-                        <span style="float: left; font-size: 16px; font-weight: 900; color: #000 ">
-                                {{authors | sentence_list}}
-                        
-                        </span>
-                        <br/>
-                        <span class="length " style="font-size: 16px">{{ content | read_time }} minute read</span>
+                        <div style="float: left; font-size: 16px; font-weight: 900; color: #000 ">
+                            {{authors | sentence_list}}
+
+                        </div>
+
+                        <div class="length " style="clear: both; font-size: 14px">{{ content | read_time }} minute read</div>
 
                     </div>
                     <div class="date ">
