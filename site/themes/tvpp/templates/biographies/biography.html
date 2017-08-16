@@ -10,8 +10,25 @@
 
                 <p>{{ if headshot }}
                     <img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{title}}" width="140" height="140" class="small-image" style="float: left; margin-right: 15px;">{{/if}}{{ content }}</p>
+
+
             </div>
         </div>
     </div>
 
 </section>
+
+<div style="border-top: 1px solid #ccc; margin-top: 30px; padding-top: 50px; padding-bottom: 50px; background: #eee;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <!-- <h2>Blog posts by {{title}}</h2>
+                <article class="list">
+                    {{ collection:blog as="posts" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
+                </article> -->
+                {{partial:biography-footer}}
+            </div>
+        </div>
+    </div>
+</div>
