@@ -1,6 +1,6 @@
 <div class="list">
     <div class="regular">
-        <h6>Recent <em>tvpp blog posts</em></h6>
-        {{ collection:next in="blog" limit="2" url:not="{url}"}} {{ partial:block }} {{ /collection:next }}
+        <h6>Recently posted <em>on the TVPP blog</em></h6>
+        {{ collection:blog as="posts" limit="2" sort="date:desc"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
     </div>
 </div>

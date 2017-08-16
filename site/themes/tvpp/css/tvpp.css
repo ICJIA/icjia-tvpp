@@ -160,14 +160,15 @@ section header .meta .date {
 
 .read-more {
   margin-top: 96px;
-  font-family: "Lora", serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   display: block;
-  font-family: "Lora", serif;
+  font-family: "Lato", sans-serif;
   color: #b8b8b8;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: .5em;
+  font-weight: 900;
 }
 
 .read-more a {

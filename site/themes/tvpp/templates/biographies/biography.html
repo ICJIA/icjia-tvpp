@@ -28,6 +28,10 @@
                     {{ collection:blog as="posts" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
                 </article> -->
                 {{partial:biography-footer}}
+
+                <div class="read-more">
+                    <a href="/blog/authors/{{title | slugify}}">All posts by {{title}}</a>
+                </div>
             </div>
         </div>
     </div>

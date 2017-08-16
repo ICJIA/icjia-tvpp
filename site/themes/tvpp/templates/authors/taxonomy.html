@@ -2,7 +2,7 @@
 
 
     <header>
-        <h1 class="h2 text-center" style="text-transform: uppercase">Blog posts authored by:</h1>
+        <h1 class="h2 text-center" style="text-transform: uppercase">Blog posts by:</h1>
         <!-- <h2>{{ content }}</h2> -->
         <h2 class="h3 text-center" style="text-transform: uppercase; color: #aaa;">{{ title }}</h2>
     </header>
@@ -12,9 +12,9 @@
             <div class="col-md-12">
 
                 <article class="list" style="margin-top: 70px">
-                    {{ collection:blog taxonomy="true" paginate="true" as="posts" limit="10" }} {{ if no_results }}
+                    {{ collection:blog taxonomy="true" paginate="true" as="posts" limit="10"}} {{ if no_results }}
                     <p>No "{{ title }}" posts.</p>
-                    {{ /if }} {{ posts scope="author" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
+                    {{ /if }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
                 </article>
             </div>
         </div>
