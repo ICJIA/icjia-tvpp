@@ -5,6 +5,15 @@ fields:
     type: title
     display: Title
     localizable: true
+  add_disqus:
+    display: Add Disqus comment field?
+    instructions: The comment field replaces the 'Recent Posts'
+    type: toggle
+    default: false
+  authors:
+    display: Authors
+    required: false
+    type: tags
   add_dropcap:
     display: Add a dropcap to first paragraph
     type: toggle
@@ -25,10 +34,7 @@ fields:
     container: main
     folder: img
     max_files: 1
-  authors:
-    display: Authors
-    required: false
-    type: tags
+
   content:
     type: markdown
     display: Content

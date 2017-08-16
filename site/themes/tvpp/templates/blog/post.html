@@ -64,7 +64,7 @@
     <div class="container ">
         <div class="row ">
             <div class="col-md-12 ">
-                {{partial:article-footer}}
+                {{if add_disqus == 'true'}} {{ disqus:comments id="{ id }" }} {{else}} {{partial:article-footer}} {{/if}}
             </div>
         </div>
 
