@@ -7,7 +7,7 @@
     <div class="container">
         <div class="col-md-12">
             <article class="list">
-                {{ collection:blog paginate="true" as="posts" limit="10" }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
+                {{ collection:blog paginate="true" as="posts" limit="5" }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
             </article>
         </div>
     </div>
