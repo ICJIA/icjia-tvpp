@@ -3,6 +3,10 @@ is_hidden: false
 title: Home
 splash: /assets/img/tvpp-splash-02.jpg
 accent: /assets/img/tvpp-secondary-01.jpg
+short_description: |
+  The Targeted Violence Prevention Program makes outside research on targeted violence prevention and countering
+  violent extremism more accessible to community-based and faith-based organizations. TVPP can also partner with
+  community-level efforts to conduct research on current and new targeted violence prevention programs.
 display_nav: 'Yes'
 template: home/index
 fieldset: home

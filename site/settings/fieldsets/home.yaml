@@ -25,6 +25,11 @@ fields:
     display: Accent/Secondary image
     container: main
     folder: img
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: A truncated version of this will display as the teaser in search.
+    localizable: true
   content:
     type: markdown
     display: Content

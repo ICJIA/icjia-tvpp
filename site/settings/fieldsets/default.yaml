@@ -18,6 +18,10 @@ fields:
     display: Add a dropcap to first paragraph
     type: toggle
     default: false
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: A truncated version of this description will display as the teaser in search and other listings. If omitted, a truncated version of the main content below will be used.
   hero_image:
     type: assets
     display: Hero Image
@@ -27,6 +31,7 @@ fields:
   abstract:
     display: Abstract
     type: markdown
+  
   content:
     type: markdown
     container: main

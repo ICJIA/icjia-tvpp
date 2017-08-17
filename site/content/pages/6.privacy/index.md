@@ -2,6 +2,8 @@
 title: We Respect Your Privacy
 template: page
 is_hidden: true
+add_dropcap: false
+short_description: TVPP Privacy policy
 tags: [ ]
 fieldset: default
 id: f9040d4a-4028-4e06-bf88-43ca7fbc677b
