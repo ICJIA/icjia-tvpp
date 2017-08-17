@@ -4,7 +4,7 @@
     <header>
         <h1 class="h2 text-center" style="text-transform: uppercase">Blog posts filed under:</h1>
         <!-- <h2>{{ content }}</h2> -->
-        <h2 class="h3 text-center" style="text-transform: uppercase; color: #aaa;">{{ title }}</h2>
+        <h2 class="h3 text-center" style="text-transform: uppercase; color: #aaa;">{{ title | deslugify }}</h2>
     </header>
 
     <div class="container">
