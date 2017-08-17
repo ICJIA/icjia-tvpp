@@ -3,6 +3,9 @@ title: Our Approach
 template: page
 is_hidden: false
 add_dropcap: true
+short_description: >
+  Ideologically inspired targeted violence harms all Illinoisans, and the perpetrators of these crimes
+  come from all walks of life, many different backgrounds, and from many different communities.
 hero_image: /assets/img/memorial.jpg
 abstract: >
   Ideologically inspired targeted violence harms all Illinoisans, and the perpetrators of these crimes

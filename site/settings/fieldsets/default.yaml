@@ -30,6 +30,7 @@ fields:
     max_files: 1
   abstract:
     display: Abstract
+    instructions: This appears in light text directly above the content.
     type: markdown
   
   content:
