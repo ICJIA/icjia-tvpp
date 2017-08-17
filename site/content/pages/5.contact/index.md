@@ -1,5 +1,6 @@
 ---
 title: Contact TVPP
+nav_title: Contact
 template: page
 is_hidden: false
 add_dropcap: false
