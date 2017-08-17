@@ -34,8 +34,13 @@ fields:
     container: main
     folder: img
     max_files: 1
-
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: A truncated version of this will display as the blog teaser. If omitted, a truncated version of the main content field will be used.
+    localizable: true
   content:
     type: markdown
+    instructions: Main blog post content
     display: Content
     localizable: true

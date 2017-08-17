@@ -8,8 +8,11 @@
 		{{ /if }}
 
 		<h3>{{ title }}</h3>
-
-		<p>{{ content strip_tags="img|a|p" safe_truncate="210" ensure_right="..." }}</p>
+		{{if short_description}}
+		<p>{{ short_description strip_tags="img|a|p" safe_truncate="150" ensure_right="..." }}</p>
+		{{else}}
+		<p>{{ content strip_tags="img|a|p" safe_truncate="150" ensure_right="..." }}</p>
+		{{/if}}
 
 		<div class="meta">
 			{{ if (date | days_ago) < 21 }}
