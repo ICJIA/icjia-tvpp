@@ -23,10 +23,10 @@
                             <h3>{{ title }}</h3>
 
                             {{if short_description}}
-                            <p>{{ short_description strip_tags="img|a|p|div" safe_truncate="180|..." }}</p>
+                            <p>{{ short_description strip_tags="img|a|p|div|h1|h2|h3|h4|h5|h6" safe_truncate="180|..." }}</p>
                             {{else}}
 
-                            <p>{{ content strip_tags="img|a|p|div" safe_truncate="180|..." }}</p>
+                            <p>{{ content strip_tags="img|a|p|div|h1|h2|h3|h4|h5|h6" safe_truncate="180|..." }}</p>
                             {{/if}}
 
                             <code style="margin-top: 15px;">{{ url }}</code>
