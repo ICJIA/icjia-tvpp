@@ -4,7 +4,7 @@ locales:
     full: en_US
     name: English
     url: https://tvpp.icjia.cloud/
-timezone: America/Chicago
+timezone: CST6CDT
 date_format: F jS, Y
 default_extension: md
 filesystems:
