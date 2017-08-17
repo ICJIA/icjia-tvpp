@@ -7,7 +7,7 @@
     <div class="container">
         <div class="col-md-12">
             <article class="list">
-                {{ collection:biographies as="posts" }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:biographies }}
+                {{ collection:biographies as="posts" sort="sort_name"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:biographies }}
             </article>
         </div>
     </div>

@@ -5,7 +5,12 @@ create_title: ""
 fields:
   title:
     type: title
-    display: Title
+    display: Full name
+    localizable: true
+  sort_name:
+    type: text
+    display: Sort by this name
+    instructions: Used for sorting name. Usually, this is the last name.
     localizable: true
   headshot:
     type: assets

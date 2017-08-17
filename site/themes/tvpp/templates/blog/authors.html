@@ -1,16 +1,17 @@
-<section class="regular" style="margin-top: 60px">
+<section class="regular extra">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
                 <header>
 
-                    <h1>TVPP Blog Authors:</h1>
+                    <h1 class="h2" style="border-bottom: 1px solid #ccc; padding-bottom: 8px">TVPP Blog Authors</h1>
                 </header>
 
                 <article class="list">
-                    <ul>
+                    <ul class="tags">
                         {{ taxonomy:authors sort="title" }}
-                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        <li><a href="{{ url }}" class="tag author">{{ title }}</a></li>
                         {{ /taxonomy:authors }}
                     </ul>
                 </article>
