@@ -1,10 +1,10 @@
 collections:
   blog: '/blog/{year}/{month}/{day}/{slug}'
   biographies: '/biographies/{slug}'
-  authors: '/biographies/{slug}'
+  authors: '/authors/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
-  authors: '/blog/authors/{slug}'
+  authors: '/authors/{slug}'
 routes:
   /blog/tags: blog/taxonomies
   /blog/authors: blog/authors
