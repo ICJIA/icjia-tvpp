@@ -1,6 +1,9 @@
 <div class="list">
     <div class="regular">
-        <h6>Recently posted <em>on the TVPP blog</em></h6>
+        <h6>Recently posted <em><a href="/blog">on the TVPP blog</a></em></h6>
         {{ collection:blog as="posts" limit="2" sort="date:desc" id:not="{id}"}}{{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
+    </div>
+    <div class="read-more">
+        <a href="/blog">Read the archive</a>
     </div>
 </div>
