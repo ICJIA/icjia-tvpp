@@ -1,5 +1,4 @@
-title: Contact Me
-
+title: Contact TVPP
 fields:
   name:
     display: Name
@@ -7,22 +6,13 @@ fields:
   email:
     display: Email Address
     validate: required|email
-  number:
-    display: Favorite Number
-    validate: integer
   comment:
     display: Comment
-
+columns:
+  - name
+  - email
+  - comment
 metrics:
-  -
+  - 
     type: total
     label: Total Responses
-  -
-    type: sum
-    field: number
-    label: Sum of Favorite Number
-  -
-    type: average
-    field: number
-    label: Average Favorite Number
-    precision: 1
