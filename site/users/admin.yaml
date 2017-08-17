@@ -1,6 +1,8 @@
-id: 8e7d97e1-be11-4859-b2ce-a30f3e6114d1
-super: true
+roles:
+  - d32e14fb-08c9-44c2-aaf8-21200852bafd
+email: cschweda@gmail.com
 first_name: ICJIA
 last_name: Admin
-email: cschweda@gmail.com
-password_hash: $2y$10$p0gwV6MqxtTi5E0PilqrNOIJMpkEExzcBDx5H7xM1bC9qk6jBuidu
+id: 8e7d97e1-be11-4859-b2ce-a30f3e6114d1
+super: true
+password_hash: $2y$10$0MjMb2S2wxnggIpL9SLmZ.67LPQJQC6oKNWLY/S3qRtwNzEwJ8wNW
