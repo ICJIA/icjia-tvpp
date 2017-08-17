@@ -5,12 +5,13 @@
         <h1 class="h2 text-center" style="text-transform: uppercase">Posts by:</h1>
         <!-- <h2>{{ content }}</h2> -->
         <h2 class="h3 text-center" style="text-transform: uppercase; color: #aaa;">{{ title }}</h2>
+
     </header>
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-
+                <p>{{content}}</p>
                 <article class="list" style="margin-top: 70px">
                     {{ collection:blog taxonomy="true" paginate="true" as="posts" limit="10"}} {{ if no_results }}
                     <p>No "{{ title }}" posts.</p>

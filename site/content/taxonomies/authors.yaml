@@ -1,2 +1,5 @@
 title: Authors
 template: authors/taxonomy
+is_hidden: true
+add_dropcap: false
+fieldset: author

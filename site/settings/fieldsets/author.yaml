@@ -1,0 +1,14 @@
+title: Author
+taxonomies:
+  tags: false
+create_title: ""
+fields:
+  title:
+    type: title
+    display: Title
+    localizable: true
+  content:
+    type: markdown
+    container: main
+    display: Content
+    cheatsheet: true
