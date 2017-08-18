@@ -16,3 +16,7 @@ metrics:
   - 
     type: total
     label: Total Responses
+email:
+  - 
+    to: cschweda@gmail.com
+    subject: '[TVPP Form Submission]'
