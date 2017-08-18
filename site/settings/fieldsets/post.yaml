@@ -37,7 +37,7 @@ fields:
   add_overlay:
     type: toggle
     display: Add overlay to hero image
-    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing light text over light images.
+    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing  text over lighter images.
     default: false
   short_description:
     type: markdown

@@ -28,6 +28,10 @@ fields:
     container: main
     folder: img
     max_files: 1
+  add_overlay:
+    type: toggle
+    display: Add overlay to hero image
+    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing  text over lighter images.
   abstract:
     display: Abstract
     instructions: This appears in light text directly above the content.

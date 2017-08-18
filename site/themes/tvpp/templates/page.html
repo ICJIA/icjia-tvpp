@@ -1,7 +1,9 @@
 <section class="hero">
     {{ if hero_image}}
     <div class="hero-background" style="background-image: url({{ hero_image }})">
+        {{ if add_overlay == "true"}}
         <div class="overlay"></div>
+        {{/if}}
 
     </div>
     <div style="margin-top: 60px" class="hidden-sm hidden-md hidden-lg"></div>
