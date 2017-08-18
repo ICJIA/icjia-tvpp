@@ -118,5 +118,3 @@ Ideologically inspired targeted violence is a low frequency/high impact crime.  
   </div>
 </div>
 
-Analytics: {{analytics}}
-
