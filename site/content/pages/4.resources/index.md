@@ -7,7 +7,7 @@ tags: [ ]
 fieldset: default
 id: 3eb20940-a3eb-4f44-ac36-4dcd474fe243
 ---
-  The Targeted Violence Prevention Program leverages existing resources that can benefit individuals
+The Targeted Violence Prevention Program leverages existing resources that can benefit individuals
   and organizations seeking to build and sustain community-level programs to prevent ideologically
   inspired targeted violence. Institutions, organizations, and websites that may be useful to TVPP and
   to our community partners will be shared here.
@@ -27,7 +27,7 @@ table td.text-sm {
 				<tr>
 
 <td width="25%" style="vertical-align: middle;" class="text-center pad">
-							<a href="http://www.start.umd.edu/" target="_blank"><img src="/assets/img/start-logo.png" alt="Start"></a>
+							<a href="http://www.start.umd.edu/" target="_blank"><img src="/assets/img/logos/start-logo.png" alt="Start"></a>
 					</td>
 
 <td class="text-sm" style="border-bottom: 1px solid #ccc; padding-bottom: 25px;padding-top: 25px;"><a href="http://www.start.umd.edu/" target="_blank">
@@ -43,7 +43,7 @@ The National Consortium for the Study of Terrorism and Responses to Terrorism (S
 						
 
 <div class="text-center resource-logo" style="background: #bbb; padding: 10px; 15px 10px 15px; margin-right: 20px; margin-top: 40px">
-								<a href="http://icsr.info/" target="_blank"><img src="/assets/img/gwu-logo.png" alt="ICSR logo"></a>
+								<a href="http://icsr.info/" target="_blank"><img src="/assets/img/logos/gwu-logo.png" alt="ICSR logo"></a>
 					  </a>
 						</div>
 					</td>
@@ -58,7 +58,7 @@ The National Consortium for the Study of Terrorism and Responses to Terrorism (S
 
 <td width="33%" style="">
 						<div class="text-center resource-logo">
-								<a href="http://icsr.info/" target="_blank"><img src="/assets/img/icsr-logo.png" width="120" alt="ICSR logo"></a>
+								<a href="http://icsr.info/" target="_blank"><img src="/assets/img/logos/icsr-logo.png" width="120" alt="ICSR logo"></a>
 					  </a>
 						</div>
 					</td>
@@ -74,7 +74,7 @@ The National Consortium for the Study of Terrorism and Responses to Terrorism (S
 <td width="33%" style="">
 
 <div class="text-center resource-logo">
-								<a href="http://voxpol.eu/" target="_blank"><img src="/assets/img/vox-logo.jpg" width="175" alt="Virtual Centre of Excellence for Research in Violent Online Political Extremism logo"></a>
+								<a href="http://voxpol.eu/" target="_blank"><img src="/assets/img/logos/vox-logo.jpg" width="175" alt="Virtual Centre of Excellence for Research in Violent Online Political Extremism logo"></a>
 						</a>
 						</div>
 
@@ -90,7 +90,7 @@ The National Consortium for the Study of Terrorism and Responses to Terrorism (S
 
 <td width="33%" style="">
 		<div class="text-center resource-logo">
-								<a href="http://sites.duke.edu/tcths/" target="_blank"><img src="/assets/img/triangle-logo.jpg" width="175" alt="Triangle Center on Terrorism and Homeland Security"></a>
+								<a href="http://sites.duke.edu/tcths/" target="_blank"><img src="/assets/img/logos/triangle-logo.jpg" width="175" alt="Triangle Center on Terrorism and Homeland Security"></a>
 						</a>
 						</div>
 

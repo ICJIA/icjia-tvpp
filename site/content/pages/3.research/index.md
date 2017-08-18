@@ -16,7 +16,7 @@ id: e523c7bb-03c2-4be6-a827-b0880742637d
 ---
 Research is an important part of building and sustaining community-level programs to prevent ideologically inspired targeted violence throughout Illinois.
 
-![ISIS Logo](/assets/img/ISIS-Logo.png){.yank-right}
+![ISIS Logo](/assets/img/logos/ISIS-Logo.png){.yank-right}
 
 The Targeted Violence Prevention Program at the Illinois Criminal Justice Information Authority works with scholars and researchers throughout the United States and abroad to make research on targeted violence prevention, violent online political extremism, and other relevant issues more accessible to individuals and organizations in Illinois who can use this knowledge to build more effective programs within their communities.
 
