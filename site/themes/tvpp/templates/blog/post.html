@@ -2,17 +2,19 @@
 <section class="hero">
 
     <div class="hero-background" style="background-image: url({{ hero_image }})">
+        {{ if add_overlay == "true"}}
         <div class="overlay"></div>
+        {{/if}}
         <header>
             <h1>{{ title wrap="h1"}}</h1>
 
         </header>
-        <div class="meta">
+        <div class="meta" style="">
 
-            <div class="name" style="font-weight: 900;">
+            <div class=" name " style="font-weight: 900; ">
                 {{authors | sentence_list}}
             </div>
-            <div class="length" style="color: #eee ">{{ content | read_time }} minute read</div>
+            <div class="length ">{{ content | read_time }} minute read</div>
             <div class="date ">
                 {{ date format="F j, Y " }}
             </div>
@@ -44,14 +46,14 @@
 
                         </div>
 
-                        <div class="length " style="clear: both; font-size: 14px">{{ content | read_time }} minute read</div>
+                        <div class="length " style="clear: both; font-size: 14px ">{{ content | read_time }} minute read</div>
 
                     </div>
                     <div class="date ">
                         {{ date format="F j, Y " }}
                     </div>
                 </div>
-                <h1 style="margin-top: 25px">{{ title }}</h1>
+                <h1 style="margin-top: 25px ">{{ title }}</h1>
             </header>
             {{partial:article-content}}
         </div>
@@ -64,7 +66,7 @@
     <div class="container ">
         <div class="row ">
             <div class="col-md-12 ">
-                {{if add_disqus == 'true'}} {{ disqus:comments id="{ id }" }} {{else}} {{partial:article-footer}} {{/if}}
+                {{if add_disqus == 'true'}} {{ disqus:comments id="{ id } " }} {{else}} {{partial:article-footer}} {{/if}}
             </div>
         </div>
 
