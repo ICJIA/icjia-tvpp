@@ -2,3 +2,4 @@ settings:
   debug:
     debug: true
     debug_bar: true
+  
