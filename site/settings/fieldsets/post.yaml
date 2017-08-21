@@ -50,3 +50,6 @@ fields:
     instructions: Main blog post content
     display: Content
     localizable: true
+    cheatsheet: true
+    container: main
+    

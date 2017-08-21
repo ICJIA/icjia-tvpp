@@ -1,1 +1,30 @@
-author info here.
+<section class="regular extra">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <header>
+
+                    <h1 class="h2" style="border-bottom: 1px solid #ccc; padding-bottom: 8px">TVPP Blog Authors</h1>
+                </header>
+
+
+                {{ taxonomy:authors sort="sort_name" }}
+                <div class="block authors">
+                    <a href="{{ url }}">
+                        {{if headshot }}
+                        <img src="{{ glide:headshot width='120' height='120' fit='crop' }}" class="small-image">
+                        {{else}}
+                        <div style="clear: both; height: 0px; width: 120px;"></div>
+                    {{ /if }}
+                        <h3>{{ title }}</h3>
+                        <p>{{content | markdown | strip_tags | safe_truncate:220 | collapse_whitespace}}... </p>
+                    </a>
+                </div>{{ /taxonomy:authors }}
+
+
+
+            </div>
+        </div>
+    </div>
+</section>

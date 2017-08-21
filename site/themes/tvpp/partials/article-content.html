@@ -18,10 +18,7 @@
         <li><a href="{{ url }}" class="tag">{{ title | deslugify }}</a></li>
         {{ /tags }}
     </ul>
-    <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Authors</h5>
-    <ul class="tags" style="margin-top: -30px">
-        {{ authors }}
-        <li style="padding-right: 15px"><a href="/authors/{{ title | slugify }}" class="tag author">{{ title | deslugify }}</a></li>
-        {{ /authors }}
-    </ul>
+
+    {{partial:author-listing}}
+
 </article>

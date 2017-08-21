@@ -198,6 +198,10 @@ article.content {
     margin-top: $gap;
     padding-top: $gap;
     border-top: 1px solid rgba(0, 0, 0, .05);
+    &.authors {
+        border-top: none;
+        margin-bottom: 30px;
+    }
     h3 {
         font-family: $font_sans_head;
         font-size: 24px;
@@ -226,6 +230,10 @@ article.content {
         border: 1px solid rgba(0, 0, 0, 0.05);
         float: right;
         margin: 3px 0 0 $gap;
+        &.left {
+            float: left;
+            margin: 3px $gap 0 0;
+        }
     }
     img.large-image {
         border: 1px solid rgba(0, 0, 0, 0.05);
@@ -388,4 +396,8 @@ a {
     font-weight: 900;
     font-family: $font_sans_head;
     margin-bottom: 30px;
+}
+
+.spacer {
+    margin-top: 25px
 }

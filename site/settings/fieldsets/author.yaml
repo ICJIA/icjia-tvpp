@@ -12,6 +12,18 @@ fields:
     display: Sort by this name
     instructions: Used for sorting name. Usually, this is the last name.
     localizable: true
+  telephone:
+    type: text
+    display: Phone
+  email:
+    type: text
+    display: Email address
+  facebook:
+    type: text
+    display: Facebook URL
+  twitter:
+    type: text
+    display: Twitter URL
   headshot:
     type: assets
     max_files: 1

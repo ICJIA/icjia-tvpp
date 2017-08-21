@@ -1,0 +1,9 @@
+<h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Authors</h5>
+
+<ul class="" style="font-family: 'Lato', sans-serif; font-size: 14px;">
+    {{ authors }}
+    <li style="padding-right: 15px">
+        <a href="/authors/{{ title | slugify }}" class="author" style="font-weight: 900; text-transform: uppercase;">{{ title | deslugify }}</a>
+    </li>
+    {{ /authors }}
+</ul>

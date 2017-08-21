@@ -6,8 +6,8 @@ taxonomies:
   authors: '/authors/{slug}'
 routes:
   /blog/tags: blog/taxonomies
-  /blog/authors: blog/authors
-  /authors: blog/authors
+  /blog/authors: authors/index
+  /authors: authors/index
   # /biographies: biographies/index
   /search: search
   /blog/feed:
