@@ -1,2 +1,34 @@
-!function r(t,e,n){function i(u,c){if(!e[u]){if(!t[u]){var f="function"==typeof require&&require;if(!c&&f)return f(u,!0);if(o)return o(u,!0);var p=new Error("Cannot find module '"+u+"'");throw p.code="MODULE_NOT_FOUND",p}var a=e[u]={exports:{}};t[u][0].call(a.exports,function(r){var e=t[u][1][r];return i(e?e:r)},a,a.exports,r,t,e,n)}return e[u].exports}for(var o="function"==typeof require&&require,u=0;u<n.length;u++)i(n[u]);return i}({1:[function(r,t,e){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n={highlightSearch:function(){$(function(){$(".search").focus().select()})},appDisplay:function(){},init:function(){var r=this;this.appDisplay(),$(function(){r.highlightSearch()})}};e.App=n},{}],2:[function(r,t,e){"use strict";var n=r("./App.js");n.App.init()},{"./App.js":1}]},{},[2]);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var App = {
+
+    init: function init() {
+        console.log('TVPP Init');
+        return this;
+    },
+
+    highlightSearch: function highlightSearch() {
+        $(".search").focus().select();
+        return this;
+    }
+
+};
+
+exports.App = App;
+
+},{}],2:[function(require,module,exports){
+'use strict';
+
+var _App = require('./App.js');
+
+$(function () {
+    _App.App.init().highlightSearch();
+});
+
+},{"./App.js":1}]},{},[2]);
+
 //# sourceMappingURL=tvpp.js.map

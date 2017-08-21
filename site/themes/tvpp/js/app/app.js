@@ -1,32 +1,15 @@
 const App = {
 
-    highlightSearch: function() {
-        $(function() {
-            $(".search").focus().select();
-        });
-    },
-
-    appDisplay: function() {
-        console.log('TVPP Init')
-    },
-
     init: function() {
+        console.log('TVPP Init')
+        return this
+    },
 
-        const self = this;
-
-        // Display status
-        this.appDisplay();
-
-        // highlight search term
-
-        $(function() {
-            self.highlightSearch()
-        });
-
-
-
-        return
+    highlightSearch: function() {
+        $(".search").focus().select();
+        return this
     }
+
 }
 
 export { App }

@@ -1,3 +1,6 @@
 import { App } from './App.js'
 
-App.init();
+$(function() {
+    App.init()
+        .highlightSearch();
+});
