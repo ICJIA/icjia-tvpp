@@ -1,6 +1,5 @@
 collections:
   blog: '/blog/{year}/{month}/{day}/{slug}'
-  biographies: '/biographies/{slug}'
   authors: '/authors/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
@@ -9,7 +8,7 @@ routes:
   /blog/tags: blog/taxonomies
   /blog/authors: blog/authors
   /authors: blog/authors
-  /biographies: biographies/index
+  # /biographies: biographies/index
   /search: search
   /blog/feed:
     layout: feed

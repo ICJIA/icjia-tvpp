@@ -1,6 +1,0 @@
-order: date
-fieldset: biography
-template: biographies/biography
-searchable:
-  - title
-  - content

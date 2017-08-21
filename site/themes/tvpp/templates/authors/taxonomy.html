@@ -1,24 +1,37 @@
 <section class="regular extra">
-
-
-    <header>
-        <h1 class="h2 text-center" style="text-transform: uppercase">Posts by:</h1>
-        <!-- <h2>{{ content }}</h2> -->
-        <h2 class="h3 text-center" style="text-transform: uppercase; color: #aaa;">{{ title }}</h2>
-
-    </header>
-
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <p>{{content}}</p>
-                <article class="list" style="margin-top: 70px">
-                    {{ collection:blog taxonomy="true" paginate="true" as="posts" limit="10"}} {{ if no_results }}
-                    <p>No "{{ title }}" posts.</p>
-                    {{ /if }} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ partial:pagination }} {{ /collection:blog }}
-                </article>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <header>
+                    <h1>{{ title }}</h1>
+
+                </header>
+
+                <p>{{ if headshot }}
+                    <img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{title}}" width="140" height="140" class="small-image" style="float: left; margin-right: 15px;">{{/if}}</p>
+
+                {{content | markdown}}
+
+
             </div>
         </div>
     </div>
 
 </section>
+
+<div style="border-top: 1px solid #ccc; margin-top: 30px; padding-top: 50px; padding-bottom: 50px; background: #eee;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                {{partial:biography-footer}}
+
+                <div class="read-more">
+                    <a href="/authors/{{title | slugify}}">All posts by {{title}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

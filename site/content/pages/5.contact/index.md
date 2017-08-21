@@ -1,16 +1,29 @@
 ---
 title: Contact TVPP
-nav_title: Contact
 template: page
 is_hidden: false
 add_dropcap: false
+short_description: ' **Junaid M. Afeef** was named director of the Targeted Violence Prevention Program at the Illinois Criminal Justice Information Authority in February 2016.'
+add_overlay: false
+abstract: ""
+nav_title: Contact
 tags: [ ]
 fieldset: default
 id: de6221a5-1919-47ca-8d1f-2092db09a1a5
 ---
- {{ collection:biographies as="posts" title:contains="afeef"}} {{ posts scope="tag" }} <img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{title}}" width="140" height="140" class="small-image" style="float: left; margin-right: 15px; margin-top: 5px;">{{content}} {{ /posts }} {{ /collection:biographies }}
+<img src="/assets/img/headshots/jafeef.jpg" alt="{{title}}" width="170" height="140" class="small-image" style="float: left; margin-right: 15px; margin-top: 0px">
 
- ---
+ **Junaid M. Afeef** was named director of the Targeted Violence Prevention Program at the [ICJIA](http://www.icjia.state.il.us) in February 2016. Immediately prior to leading TVPP, Mr. Afeef was acting general counsel at ICJIA. Mr. Afeef has over two decades of experience in the criminal justice system. Early in his career he worked in the Juvenile Justice/Child Protection Division of the Cook County Public Defender’s Office. He continued working with parents and children as a bar attorney in solo private practice alongside his criminal defense and civil rights work. Mr. Afeef is very active in civic work. He co-founded the Muslim Bar Association of Chicago in 1998, and has served on various boards of religious, civic, and government entities.
+  
+  Mr. Afeef served as the executive director of the Council of Islamic Organizations of Greater Chicago in 2008 and 2009 where he focused on promoting civic engagement and interfaith dialogue. Mr. Afeef is a fellow with the American Muslim Civic Leadership Institute at the University of Southern California. He is also a partner at the Truman National Security Project. Mr. Afeef’s commentary on domestic terrorism and countering violent extremism (CVE) has appeared in the Chicago Tribune and in numerous online publications and journals.
+  
+  <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;(312) 793-7434 [<i class="fa fa-envelope" aria-hidden="true"></i> Email](/contact/contact-form) {.no-underline .spacer-left}[<i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook](https://www.facebook.com/targetedviolenceprevention/) {.no-underline .spacer-left}
+  
+  <h4>Academic Background</h4>
+  
+  - Juris Doctorate, The American University’s Washington College of Law, 1994
+  - Bachelor of Arts, Political Science, University of Iowa, 1991
+
 
 ### Partner with TVPP and Build Greater Community Resilience
 
@@ -48,6 +61,7 @@ E: [junaid.afeef@illinois.gov](junaid.afeef@illinois.gov)
 <div class="text-center" style="margin-top: 50px; margin-bottom: 50px;">
 <a class="btn btn-default" href="/contact/contact-form" style="text-transform: uppercase; font-family: 'Lato', sans-serif; font-weight: 900"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Send Your Comments to TVPP</a>
 </div>
+
 
 
 

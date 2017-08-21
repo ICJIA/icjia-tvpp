@@ -13,7 +13,8 @@ fields:
   authors:
     display: Authors
     required: false
-    type: tags
+    type: taxonomy
+    taxonomy: authors
   add_dropcap:
     display: Add a dropcap to first paragraph
     type: toggle
