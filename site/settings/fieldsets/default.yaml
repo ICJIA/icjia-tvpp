@@ -1,6 +1,4 @@
 title: Default TVPP Page
-taxonomies:
-  tags: true
 create_title: ""
 fields:
   title:
