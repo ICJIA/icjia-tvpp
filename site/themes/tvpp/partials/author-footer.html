@@ -1,8 +1,18 @@
-<div class="list" style="margin-top: -30px">
-    <div class="regular">
-        <h6><em>Blog Posts by</em> {{title}}</h6>
-        <article class="list">
-            {{ collection:blog as="posts" sort="date:desc" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
-        </article>
+<div style="border-top: 1px solid #ccc; margin-top: 30px; padding-top: 50px; padding-bottom: 50px; background: #eee;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="list" style="margin-top: -30px">
+                    <div class="regular">
+                        <h6><em>Blog Posts by</em> {{title}}</h6>
+                        <article class="list">
+                            {{ collection:blog as="posts" sort="date:desc" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </div>
