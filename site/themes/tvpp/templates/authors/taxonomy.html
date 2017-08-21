@@ -11,8 +11,15 @@
                 <p>{{ if headshot }}
                     <img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{title}}" width="140" height="140" class="small-image" style="float: left; margin-right: 15px;">{{/if}}</p>
 
-                {{content | markdown}}
-
+                {{content | markdown}} {{if telephone or facebook or email or twitter }}
+                <div class="contact">
+                    <h2 class="h4" style="margin-top: 25px; border-bottom: 0px solid #ccc; padding-bottom: 8px; margin-bottom: 10px">Contact</h2>
+                    {{if telephone}}&nbsp;&nbsp;<i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;{{telephone}}{{/if}} {{if email}}&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto:{{email}}">{{email}}</a>{{/if}}
+                    {{if facebook}}&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;&nbsp;<a href="{{facebook}}">Facebook</a>{{/if}} {{if twitter}}&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="{{twitter}}">Twitter</a>{{/if}}
+                </div>
+                {{/if}}
 
             </div>
         </div>
