@@ -1,8 +1,8 @@
 <div class="list" style="margin-top: -30px">
     <div class="regular">
-        <h6><em>Recent Blog Posts by</em> {{title}}</h6>
+        <h6><em>All Blog Posts by</em> {{title}}</h6>
         <article class="list">
-            {{ collection:blog as="posts" sort="date:desc" limit="3" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
+            {{ collection:blog as="posts" sort="date:desc" taxonomy:authors="{title}"}} {{ posts scope="tag" }} {{ partial:block }} {{ /posts }} {{ /collection:blog }}
         </article>
     </div>
 </div>
