@@ -1,33 +1,22 @@
 title: Blog Post
 hide: true
+taxonomies:
+  tags: true
+  authors: true
 fields:
   title:
     type: title
     display: Title
     localizable: true
-  add_disqus:
-    display: Add Disqus comment field?
-    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments. <b>Use this with caution. The admin will need to fequently moderate comments</b>."
-    type: toggle
-    default: false
-  authors:
-    display: Authors
-    required: false
-    type: taxonomy
-    taxonomy: authors
-  add_dropcap:
-    display: Add a dropcap to first paragraph
-    type: toggle
-    default: false
-  intro_image_caption:
-    type: text
-    display: Intro image caption
   intro_image:
     type: assets
     display: Intro Image
     container: main
     folder: img
     max_files: 1
+  intro_image_caption:
+    type: text
+    display: Intro image caption
   
   hero_image:
     type: assets
@@ -52,4 +41,13 @@ fields:
     localizable: true
     cheatsheet: true
     container: main
-    
+  add_disqus:
+    display: Add Disqus comment field?
+    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments. <b>Use this with caution. The site administrator will need to fequently moderate comments</b>."
+    type: toggle
+    default: false
+  add_dropcap:
+    display: Add a dropcap to first paragraph
+    type: toggle
+    default: false
+
