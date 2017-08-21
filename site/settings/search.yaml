@@ -6,4 +6,5 @@ default_index: default
 searchable:
   - title
   - content
+  - abstract
   - short_description

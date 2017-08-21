@@ -3,7 +3,6 @@ title: Resources
 template: page
 is_hidden: false
 add_dropcap: false
-tags: [ ]
 fieldset: default
 id: 3eb20940-a3eb-4f44-ac36-4dcd474fe243
 ---

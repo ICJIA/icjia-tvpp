@@ -28,6 +28,9 @@ fields:
     display: Add contrast overlay to hero image?
     instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing the title over lighter images.
     default: false
+  text:
+    type: section
+    display: Blog content
   short_description:
     type: markdown
     display: Short description
@@ -40,6 +43,9 @@ fields:
     localizable: true
     cheatsheet: true
     container: main
+  options:
+    type: section
+    display: Blog post options
   add_disqus:
     display: Add Disqus comment field?
     instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments and respond to comment. <b>Use this with caution. The site administrator should fequently moderate comments</b>."

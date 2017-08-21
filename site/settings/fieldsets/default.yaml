@@ -8,18 +8,8 @@ fields:
   template:
     type: template
     default: page
-  is_hidden:
-    display: Hide from navigation?
-    type: toggle
-    default: true
-  add_dropcap:
-    display: Add a dropcap to first letter of first paragraph?
-    type: toggle
-    default: false
-  short_description:
-    type: markdown
-    display: Short description
-    instructions: A truncated version of this description will display as the teaser in search and other listings. If omitted, a truncated version of the main content below will be used.
+  images:
+    type: section
   hero_image:
     type: assets
     display: Hero Image
@@ -30,13 +20,31 @@ fields:
     type: toggle
     display: Add contrast overlay to hero image?
     instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing the title over lighter images.
+  text:
+    type: section
+    display: Page content
+  short_description:
+    type: markdown
+    display: Short description
+    instructions: A truncated version of this description will display as the teaser in search and other listings. If omitted, a truncated version of the main content below will be used. This is not displayed on the blog entry.
   abstract:
     display: Abstract
-    instructions: This appears in light text directly above the content.
+    instructions: This is displayed directly above the main content.
     type: markdown
-  
   content:
     type: markdown
     container: main
     display: Content
     cheatsheet: true
+  options:
+    type: section
+    display: Page content options
+  is_hidden:
+    display: Hide this page from the navbar?
+    instructions: Turn this 'on' to prevent the page from appearing in the navbar.
+    type: toggle
+    default: true
+  add_dropcap:
+    display: Add a dropcap to first letter of first paragraph?
+    type: toggle
+    default: false
