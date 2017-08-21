@@ -1,8 +1,11 @@
 .navbar-tvpp {
     background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 0px solid rgba(0, 0, 0, .1);
     border-radius: 0;
     min-height: 60px;
+    -webkit-box-shadow: 0 4px 3px -3px #999;
+    -moz-box-shadow: 0 4px 3px -3px #999;
+    box-shadow: 0 4px 3px -3px #999;
     .nav {
         color: $color_light;
         font-family: $font_sans_head;
