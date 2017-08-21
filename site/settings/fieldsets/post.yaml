@@ -17,7 +17,6 @@ fields:
   intro_image_caption:
     type: text
     display: Intro image caption
-  
   hero_image:
     type: assets
     display: Hero Image
@@ -26,8 +25,8 @@ fields:
     max_files: 1
   add_overlay:
     type: toggle
-    display: Add overlay to hero image
-    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing  text over lighter images.
+    display: Add contrast overlay to hero image?
+    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing the title over lighter images.
     default: false
   short_description:
     type: markdown
@@ -43,11 +42,11 @@ fields:
     container: main
   add_disqus:
     display: Add Disqus comment field?
-    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments. <b>Use this with caution. The site administrator will need to fequently moderate comments</b>."
+    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments and respond to comment. <b>Use this with caution. The site administrator should fequently moderate comments</b>."
     type: toggle
     default: false
   add_dropcap:
-    display: Add a dropcap to first paragraph
+    display: Add a dropcap to first letter of first paragraph?
     type: toggle
     default: false
 

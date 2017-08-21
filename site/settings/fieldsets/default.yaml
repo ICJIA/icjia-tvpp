@@ -9,11 +9,11 @@ fields:
     type: template
     default: page
   is_hidden:
-    display: Hide from navigation
+    display: Hide from navigation?
     type: toggle
     default: true
   add_dropcap:
-    display: Add a dropcap to first paragraph
+    display: Add a dropcap to first letter of first paragraph?
     type: toggle
     default: false
   short_description:
@@ -28,8 +28,8 @@ fields:
     max_files: 1
   add_overlay:
     type: toggle
-    display: Add overlay to hero image
-    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing  text over lighter images.
+    display: Add contrast overlay to hero image?
+    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing the title over lighter images.
   abstract:
     display: Abstract
     instructions: This appears in light text directly above the content.
