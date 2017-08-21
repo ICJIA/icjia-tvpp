@@ -14,6 +14,7 @@ tags: [ ]
 fieldset: default
 id: 6ae48f09-db39-4eea-9a0a-0616975d4ea4
 ---
+
 The Illinois Criminal Justice Information Authority’s Targeted Violence Prevention Program (TVPP) uses a public health approach towards ideologically inspired targeted violence prevention. TVPP works with interested communities in building and sustaining community-level programs that can prevent individuals from being recruited to commit ideologically inspired targeted violence, and to help re-direct or “off-ramp” individuals who have begun down the path of violence but have not yet committed a crime.
 
 <div class="pullquote left">

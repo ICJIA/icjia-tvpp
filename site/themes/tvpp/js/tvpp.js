@@ -8,7 +8,13 @@ var App = {
 
     init: function init() {
 
-        return "TVPP Init";
+        $(function () {
+            $(".search").focus().select();
+        });
+
+        console.log('TVPP Init');
+
+        return;
     }
 };
 
@@ -19,7 +25,7 @@ exports.App = App;
 
 var _App = require('./App.js');
 
-console.log(_App.App.init());
+_App.App.init();
 
 },{"./App.js":1}]},{},[2]);
 

@@ -2,7 +2,13 @@ const App = {
 
     init: function() {
 
-        return "TVPP Init"
+        $(function() {
+            $(".search").focus().select();
+        });
+
+        console.log('TVPP Init')
+
+        return
     }
 }
 
