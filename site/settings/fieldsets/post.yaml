@@ -8,9 +8,14 @@ fields:
     type: title
     display: Title
     localizable: true
+  images:
+    type: section
+    display: Blog post images
+    instructions: Generally, you'll want a hero image or an intro image -- but not both.
   intro_image:
     type: assets
     display: Intro Image
+    instructions: The intro image will appear directly under the blog title. 
     container: main
     folder: img
     max_files: 1
@@ -20,21 +25,22 @@ fields:
   hero_image:
     type: assets
     display: Hero Image
+    instructions: The hero image appears full width above the title.<br><b>Generally, you'll want a hero image or an intro image -- but not both.</b>
     container: main
     folder: img
     max_files: 1
   add_overlay:
     type: toggle
     display: Add contrast overlay to hero image?
-    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly. This adds contrast when superimposing the title over lighter images.
+    instructions: Toggle this '<b>on</b>' to add a transparent overlay to darken the hero image slightly.<br><b>The overlay adds contrast when superimposing the blog post title over lighter images.</b>
     default: false
   text:
     type: section
-    display: Blog content
+    display: Blog post content
   short_description:
     type: markdown
     display: Short description
-    instructions: The short description will display as the teaser for blog and search listings. If omitted, a truncated version of the main content field will be used. Use a short description when you want to include critical information in the teaser that may be spread throghout the post.
+    instructions: The short description will display as the teaser for blog and search listings. If omitted, a truncated version of the main content field will be used. Use a short description when you want to include critical information in the teaser that may be spread throghout the post.<br><b>The short description will not appear in the blog post.</b>
     localizable: true
   content:
     type: markdown
@@ -48,7 +54,7 @@ fields:
     display: Blog post options
   add_disqus:
     display: Add Disqus comment field?
-    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments and respond to comment. <b>Use this with caution. The site administrator should fequently moderate comments</b>."
+    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments and respond to comment.<br><b>Use this with caution. The site administrator should fequently moderate comments</b>."
     type: toggle
     default: false
   add_dropcap:

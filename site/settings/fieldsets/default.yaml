@@ -13,6 +13,7 @@ fields:
   hero_image:
     type: assets
     display: Hero Image
+    instructions: Full width image at top of page. Horizontal images work best. Leave blank for a page with no image.
     container: main
     folder: img
     max_files: 1
@@ -26,15 +27,16 @@ fields:
   short_description:
     type: markdown
     display: Short description
-    instructions: A truncated version of this description will display as the teaser in search and other listings. If omitted, a truncated version of the main content below will be used. This is not displayed on the blog entry.
+    instructions: A truncated version of this description will display as the teaser in search and other listings. If omitted, a truncated version of the main content below will be used. <b>This is not displayed on the page.</b>
   abstract:
     display: Abstract
-    instructions: This is displayed directly above the main content.
+    instructions: This is displayed directly above the main content in a lighter font. <b>Use this as a page intro or summary.</b>
     type: markdown
   content:
     type: markdown
     container: main
     display: Content
+    instructions: This is the main page content. Use a mix of Markdown and HTML where necessary.
     cheatsheet: true
   options:
     type: section
@@ -46,5 +48,6 @@ fields:
     default: true
   add_dropcap:
     display: Add a dropcap to first letter of first paragraph?
+    instructions: Toggle 'on' to change first letter of first paragraph into a dropcap.
     type: toggle
     default: false
