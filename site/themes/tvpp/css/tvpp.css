@@ -982,6 +982,11 @@ a.no-underline {
   background: #aaa;
 }
 
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+  max-height: 640px;
+}
+
 .tags {
   list-style: none;
   margin: 0;
