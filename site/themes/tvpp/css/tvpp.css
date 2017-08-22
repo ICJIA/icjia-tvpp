@@ -867,6 +867,10 @@ a.no-underline {
   margin-top: 25px;
 }
 
+.honeypot {
+  display: none;
+}
+
 .gallery header {
   padding: 64px 0 32px;
   text-align: center;

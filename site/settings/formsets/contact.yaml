@@ -16,6 +16,3 @@ metrics:
   - 
     type: total
     label: Total Responses
-email:
-  - 
-    subject: '[TVPP Form Submission]'
