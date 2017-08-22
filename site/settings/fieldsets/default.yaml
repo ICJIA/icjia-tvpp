@@ -27,7 +27,7 @@ fields:
   short_description:
     type: markdown
     display: Short description
-    instructions: A truncated version of this description will display as the teaser in search and other listings. If omitted, a truncated version of the main content below will be used. <b>This is not displayed on the page.</b>
+    instructions: The short description displays as the teaser in search and other listings. If omitted, a truncated version of the main content will be used as the teaser. <b>The short description is not displayed on the page.</b>
   abstract:
     display: Abstract
     instructions: This is displayed directly above the main content in a lighter font. <b>Use this as a page intro or summary.</b>

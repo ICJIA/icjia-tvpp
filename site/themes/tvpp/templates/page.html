@@ -17,7 +17,9 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <h1 class="spacer dark rule h2" style="text-transform: uppercase">{{title }}</h1>
+                    {{ if abstract }}
                     <div class="abstract">{{abstract}}</div>
+                    {{/if}}
                     <div id="body-content" {{if add_dropcap=='true' }} class="dropcap" {{/if}}>
 
                         {{ content }}

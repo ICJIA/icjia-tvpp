@@ -40,8 +40,11 @@ fields:
   short_description:
     type: markdown
     display: Short description
-    instructions: The short description will display as the teaser for blog and search listings. If omitted, a truncated version of the main content field will be used. Use a short description when you want to include critical information in the teaser that may be spread throghout the post.<br><b>The short description will not appear in the blog post.</b>
-    localizable: true
+    instructions: The short description displays as the teaser in search and other listings. If omitted, a truncated version of the main content will be used as the teaser. <b>The short description is not displayed on the page.</b>
+  abstract:
+    display: Abstract
+    instructions: This is displayed directly above the main content in a lighter font. <b>Use this as a blog post intro or summary.</b>
+    type: markdown
   content:
     type: markdown
     instructions: Main blog post content
@@ -54,11 +57,11 @@ fields:
     display: Blog post options
   add_disqus:
     display: Add Disqus comment field?
-    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments and respond to comment.<br><b>Use this with caution. The site administrator should fequently moderate comments</b>."
+    instructions: "Replace the <b>Recent Blog Posts</b> with a <a href='https://disqus.com/' target='_blank'>Disqus comment field</a> at the bottom of a blog page. Users will be able to leave comments and respond to comment.<br><b>Use this with caution.</b>""
     type: toggle
     default: false
   add_dropcap:
-    display: Add a dropcap to first letter of first paragraph?
+    display: Add a dropcap to the first letter of first paragraph?
     type: toggle
     default: false
 
