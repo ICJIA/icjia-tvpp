@@ -1,6 +1,6 @@
 ---
 is_hidden: false
-title: Home
+title: Illinois Targeted Prevention Program
 splash: /assets/img/tvpp-splash-02.jpg
 accent: /assets/img/tvpp-secondary-01.jpg
 short_description: |
