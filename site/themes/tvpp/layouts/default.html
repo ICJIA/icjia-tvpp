@@ -29,6 +29,18 @@
     <meta property="article:author" content="https://www.facebook.com/targetedviolenceprevention/" />
     <meta property="og:image" content="{{if intro_image}}{{site_url}}{{intro_image}}{{elseif hero_image}}{{site_url}}{{hero_image}}{{else}}{{site_url}}assets/img/favicons/tvpp-fb.jpg{{/if}}" />
 
+
+    <!-- Twitter metatags -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ICJIA_Illinois" />
+    <meta name="twitter:title" content="Illinois Targeted Violence Prevention Program" />
+    <meta name="twitter:description" content="{{if short_description}}{{short_description | safe_truncate:300:... | strip_tags | collapse_whitespace | sanitize }}{{elseif content}}{{content | safe_truncate:300:... | strip_tags | collapse_whitespace | sanitize}}{{else}}The Illinois Criminal Justice Information Authority’s Targeted Violence Prevention Program (TVPP) uses a public health approach to preventing ideologically inspired targeted violence. {{/if}}"
+    />
+    <meta name="twitter:image" content="{{if intro_image}}{{site_url}}{{intro_image}}{{elseif hero_image}}{{site_url}}{{hero_image}}{{else}}{{site_url}}assets/img/favicons/tvpp-fb.jpg{{/if}}" />
+    <meta name="twitter:url" content="{{permalink}}" />
+    <!-- //Twitter metatags -->
+
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
