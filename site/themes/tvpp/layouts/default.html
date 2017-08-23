@@ -21,13 +21,13 @@
     <meta property="og:title" content="Illinois Targeted Violence Prenvention Program | {{title}}" />
     <meta property="og:site_name" content="{{site_name}}" />
     <meta property="og:url" content="{{permalink}}" />
-    <meta property="og:description" content="{{if short_description}}{{short_description | safe_truncate:150 | strip_tags | collapse_whitespace}}...{{elseif content}}{{content | safe_truncate:150 | strip_tags | collapse_whitespace }}...{{else}}The Illinois Criminal Justice Information Authority’s Targeted Violence Prevention Program (TVPP) uses a public health approach to preventing ideologically inspired targeted violence. {{/if}}"
+    <meta property="og:description" content="{{if short_description}}{{short_description | safe_truncate:150 | strip_tags | collapse_whitespace | sanitize }}...{{elseif content}}{{content | safe_truncate:150 | strip_tags | collapse_whitespace | sanitize}}...{{else}}The Illinois Criminal Justice Information Authority’s Targeted Violence Prevention Program (TVPP) uses a public health approach to preventing ideologically inspired targeted violence. {{/if}}"
     />
     <meta property="fb:app_id" content="658596667606445" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="en_US" />
     <meta property="article:author" content="https://www.facebook.com/targetedviolenceprevention/" />
-    <meta property="og:image" content="{{site_url}}assets/img/favicons/tvpp-fb.jpg" />
+    <meta property="og:image" content="{{if intro_image}}{{site_url}}{{intro_image}}{{elseif hero_image}}{{site_url}}{{hero_image}}{{else}}{{site_url}}assets/img/favicons/tvpp-fb.jpg{{/if}}" />
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
