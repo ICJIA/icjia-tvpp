@@ -1,14 +1,15 @@
 <article class="content">
-
-    {{ if intro_image }}
-    <p class="text-center">
-        <img src="{{ glide :src='intro_image' quality='70' crop_focal}}" class="intro"></p>
-    {{ if intro_image_caption}}
-    <center>
-        <div class="caption">{{intro_image_caption}}</div>
-    </center>
-    {{/if}} {{ /if }} {{ if abstract }}
-    <div class="abstract">{{abstract}}</div>
+    <div class="no-print">
+        {{ if intro_image }}
+        <p class="text-center">
+            <img src="{{ glide :src='intro_image' quality='70' crop_focal}}" class="intro"></p>
+        {{ if intro_image_caption}}
+        <center>
+            <div class="caption">{{intro_image_caption}}</div>
+        </center>
+        {{/if}} {{ /if }}
+    </div> {{ if abstract }}
+    <div class="abstract spacer">{{abstract}}</div>
     {{/if}}
 
     <div id="body-content" {{if add_dropcap=='true ' }} class="dropcap" {{/if}}>
@@ -17,13 +18,15 @@
 
     </div>
 
-    <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Tags</h5>
-    <ul class="tags" style="margin-top: -30px">
-        {{ tags }}
-        <li><a href="{{ url }}" class="tag">{{ title | deslugify }}</a></li>
-        {{ /tags }}
-    </ul>
+    <div class="no-print">
+        <h5 style="padding-bottom: 8px; border-bottom: 1px solid #ccc">Tags</h5>
+        <ul class="tags" style="margin-top: -30px">
+            {{ tags }}
+            <li><a href="{{ url }}" class="tag">{{ title | deslugify }}</a></li>
+            {{ /tags }}
+        </ul>
 
-    {{partial:author-listing}}
+        {{partial:author-listing}}
+    </div>
 
 </article>

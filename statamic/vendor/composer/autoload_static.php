@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3
+class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -2504,6 +2504,10 @@ class ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3
         'Statamic\\Addons\\Asset\\AssetTags' => __DIR__ . '/../..' . '/bundles/Asset/AssetTags.php',
         'Statamic\\Addons\\Assets\\AssetsFieldtype' => __DIR__ . '/../..' . '/bundles/Assets/AssetsFieldtype.php',
         'Statamic\\Addons\\Assets\\AssetsTags' => __DIR__ . '/../..' . '/bundles/Assets/AssetsTags.php',
+        'Statamic\\Addons\\CacheManager\\CacheManager' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManager.php',
+        'Statamic\\Addons\\CacheManager\\CacheManagerController' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManagerController.php',
+        'Statamic\\Addons\\CacheManager\\CacheManagerListener' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManagerListener.php',
+        'Statamic\\Addons\\CacheManager\\CacheManagerWidget' => __DIR__ . '/../..' . '/../site/addons/CacheManager/CacheManagerWidget.php',
         'Statamic\\Addons\\Cache\\CacheTags' => __DIR__ . '/../..' . '/bundles/Cache/CacheTags.php',
         'Statamic\\Addons\\Can\\CanAPI' => __DIR__ . '/../..' . '/bundles/Can/CanAPI.php',
         'Statamic\\Addons\\Can\\CanTags' => __DIR__ . '/../..' . '/bundles/Can/CanTags.php',
@@ -2513,6 +2517,7 @@ class ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3
         'Statamic\\Addons\\Collection\\CollectionWidget' => __DIR__ . '/../..' . '/bundles/Collection/CollectionWidget.php',
         'Statamic\\Addons\\Collections\\CollectionsFieldtype' => __DIR__ . '/../..' . '/bundles/Collections/CollectionsFieldtype.php',
         'Statamic\\Addons\\Date\\DateFieldtype' => __DIR__ . '/../..' . '/bundles/Date/DateFieldtype.php',
+        'Statamic\\Addons\\Disqus\\DisqusTags' => __DIR__ . '/../..' . '/../site/addons/Disqus/DisqusTags.php',
         'Statamic\\Addons\\Dump\\DumpTags' => __DIR__ . '/../..' . '/bundles/Dump/DumpTags.php',
         'Statamic\\Addons\\Entries\\EntriesTags' => __DIR__ . '/../..' . '/bundles/Entries/EntriesTags.php',
         'Statamic\\Addons\\Env\\EnvTags' => __DIR__ . '/../..' . '/bundles/Env/EnvTags.php',
@@ -3022,9 +3027,6 @@ class ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3
         'Statamic\\Search\\IndexNotFoundException' => __DIR__ . '/../..' . '/core/Search/IndexNotFoundException.php',
         'Statamic\\Search\\ItemResolver' => __DIR__ . '/../..' . '/core/Search/ItemResolver.php',
         'Statamic\\Search\\Search' => __DIR__ . '/../..' . '/core/Search/Search.php',
-        'Statamic\\SiteHelpers\\Filters' => __DIR__ . '/../..' . '/../site/helpers/Filters.php',
-        'Statamic\\SiteHelpers\\Modifiers' => __DIR__ . '/../..' . '/../site/helpers/Modifiers.php',
-        'Statamic\\SiteHelpers\\Tags' => __DIR__ . '/../..' . '/../site/helpers/Tags.php',
         'Statamic\\Stache\\AggregateRepository' => __DIR__ . '/../..' . '/core/Stache/AggregateRepository.php',
         'Statamic\\Stache\\Driver' => __DIR__ . '/../..' . '/core/Stache/Driver.php',
         'Statamic\\Stache\\Drivers\\AbstractDriver' => __DIR__ . '/../..' . '/core/Stache/Drivers/AbstractDriver.php',
@@ -3636,10 +3638,10 @@ class ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit79374506cb46dcf53072bc7cd0728ea3::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$classMap;
 
         }, null, ClassLoader::class);
     }
