@@ -1,6 +1,7 @@
 ---
 is_hidden: false
 title: Illinois Targeted Violence Prevention Program
+nav_title: Home
 splash: /assets/img/tvpp-splash-02.jpg
 accent: /assets/img/tvpp-secondary-01.jpg
 short_description: |
