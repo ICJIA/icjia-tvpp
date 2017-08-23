@@ -3,7 +3,7 @@ title: Contact TVPP
 template: page
 is_hidden: false
 add_dropcap: false
-short_description: ' **Junaid M. Afeef** was named director of the Targeted Violence Prevention Program at the Illinois Criminal Justice Information Authority in February 2016.'
+short_description: 'Junaid M. Afeef was named director of the Targeted Violence Prevention Program at the Illinois Criminal Justice Information Authority in February 2016.'
 add_overlay: false
 abstract: ""
 nav_title: Contact
