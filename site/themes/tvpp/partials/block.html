@@ -2,11 +2,11 @@
     <a href="{{ url }}">
 
 		{{ if tag:intro_image }}
-			<img src="{{ glide:intro_image width='140' height='140' fit='crop' }}" width="140" height="140" class="small-image">
+			<img src="{{ glide:intro_image width='140' height='140' fit='crop' }}" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}" width="140" height="140" class="small-image">
 		{{ elseif tag:hero_image }}
-			<img src="{{ glide:hero_image width='140' height='140' fit='crop' }}" width="140" height="140" class="small-image">
+			<img src="{{ glide:hero_image width='140' height='140' fit='crop' }}" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}" width="140" height="140" class="small-image">
 		{{ elseif tag:headshot }}
-			<img src="{{ glide:headshot width='140' height='140' fit='crop' }}" width="140" height="140" class="small-image">
+			<img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}" width="140" height="140" class="small-image">
 		{{ /if }}
 
 		<h3>{{ title }}</h3>

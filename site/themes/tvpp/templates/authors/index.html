@@ -13,7 +13,7 @@
                 <div class="block authors">
                     <a href="{{ url }}">
                         {{if headshot }}
-                        <img src="{{ glide:headshot width='120' height='120' fit='crop' }}" class="small-image">
+                        <img src="{{ glide:headshot width='120' height='120' fit='crop' }}" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}" class="small-image">
                         {{else}}
                         <div style="clear: both; height: 0px; width: 120px;"></div>
                     {{ /if }}
