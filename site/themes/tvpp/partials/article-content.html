@@ -4,9 +4,9 @@
         <p class="text-center">
             <img src="{{ glide :src='intro_image' quality='70' crop_focal}}" class="intro" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}"></p>
         {{ if intro_image_caption}}
-        <center>
+        <div class="text-center">
             <div class="caption">{{intro_image_caption}}</div>
-        </center>
+        </div>
         {{/if}} {{ /if }}
     </div> {{ if abstract }}
     <div class="abstract spacer">{{abstract}}</div>
