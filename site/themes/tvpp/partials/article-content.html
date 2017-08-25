@@ -2,7 +2,7 @@
     <div class="no-print">
         {{ if intro_image }}
         <p class="text-center">
-            <img src="{{ glide :src='intro_image' quality='70' crop_focal}}" class="intro" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}"></p>
+            <img src="{{ glide :src='intro_image' quality='70' crop_focal}}" class="intro" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_tags}}{{/if}}"></p>
         {{ if intro_image_caption}}
         <div class="text-center">
             <div class="caption">{{intro_image_caption}}</div>

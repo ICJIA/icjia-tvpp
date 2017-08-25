@@ -9,7 +9,7 @@
                 </header>
 
                 <p>{{ if headshot }}
-                    <img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_html}}{{/if}}" width="140" height="140" class="small-image" style="float: left; margin-right: 15px;">{{/if}}</p>
+                    <img src="{{ glide:headshot width='140' height='140' fit='crop' }}" alt="{{if alt}}{{alt}}{{else}}{{title | sanitize | strip_tags}}{{/if}}" width="140" height="140" class="small-image" style="float: left; margin-right: 15px;">{{/if}}</p>
 
                 {{content | markdown}} {{if telephone or facebook or email or twitter }}
                 <div class="contact">

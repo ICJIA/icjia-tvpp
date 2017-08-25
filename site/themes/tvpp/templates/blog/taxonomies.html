@@ -1,16 +1,16 @@
-<section class="regular" style="margin-top: 60px">
-    <div class="container-fluid">
+<section class="regular extra">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="padding-bottom: 250px">
                 <header>
                     <h1>Tags</h1>
-                    <h2>Blog posts filed under:</h2>
+
                 </header>
 
                 <article class="list">
-                    <ul>
+                    <ul class="tags">
                         {{ taxonomy:tags sort="title" }}
-                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        <li><a href="{{ url }}" class="tag">{{ title }}</a></li>
                         {{ /taxonomy:tags }}
                     </ul>
                 </article>

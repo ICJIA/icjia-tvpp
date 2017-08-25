@@ -7,6 +7,7 @@ taxonomies:
 routes:
   /blog/tags: blog/taxonomies
   /blog/authors: authors/index
+  /tags: blog/taxonomies
   /authors: authors/index
   # /biographies: biographies/index
   /search: search
