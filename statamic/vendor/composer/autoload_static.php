@@ -4,9 +4,10 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
+class ComposerStaticInit27ade07bb7cd4670f73e5d0bd026079e
 {
     public static $files = array (
+        '95a22d2145ae40de20dc7ea7be07a610' => __DIR__ . '/../..' . '/bootstrap/helpers.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
@@ -110,6 +111,7 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
         'C' => 
         array (
             'Cron\\' => 5,
+            'ComposerIncludeFiles\\' => 21,
             'Collective\\Html\\' => 16,
             'ClassPreloader\\' => 15,
             'Carbon\\' => 7,
@@ -319,6 +321,10 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron',
+        ),
+        'ComposerIncludeFiles\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/funkjedi/composer-include-files/src',
         ),
         'Collective\\Html\\' => 
         array (
@@ -811,6 +817,8 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
+        'ComposerIncludeFiles\\Composer\\AutoloadGenerator' => __DIR__ . '/..' . '/funkjedi/composer-include-files/src/Composer/AutoloadGenerator.php',
+        'ComposerIncludeFiles\\Plugin' => __DIR__ . '/..' . '/funkjedi/composer-include-files/src/Plugin.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/DayOfMonthField.php',
@@ -2550,7 +2558,6 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
         'Statamic\\Addons\\NotFound\\NotFoundTags' => __DIR__ . '/../..' . '/bundles/NotFound/NotFoundTags.php',
         'Statamic\\Addons\\OAuth\\OAuthTags' => __DIR__ . '/../..' . '/bundles/OAuth/OAuthTags.php',
         'Statamic\\Addons\\Obfuscate\\ObfuscateTags' => __DIR__ . '/../..' . '/bundles/Obfuscate/ObfuscateTags.php',
-        'Statamic\\Addons\\Old\\OldTags' => __DIR__ . '/../..' . '/bundles/Old/OldTags.php',
         'Statamic\\Addons\\Pages\\PagesFieldtype' => __DIR__ . '/../..' . '/bundles/Pages/PagesFieldtype.php',
         'Statamic\\Addons\\Pages\\PagesTags' => __DIR__ . '/../..' . '/bundles/Pages/PagesTags.php',
         'Statamic\\Addons\\Parent\\ParentTags' => __DIR__ . '/../..' . '/bundles/Parent/ParentTags.php',
@@ -2906,6 +2913,7 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
         'Statamic\\Http\\Controllers\\AddonsController' => __DIR__ . '/../..' . '/core/Http/Controllers/AddonsController.php',
         'Statamic\\Http\\Controllers\\AssetContainersController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetContainersController.php',
         'Statamic\\Http\\Controllers\\AssetFoldersController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetFoldersController.php',
+        'Statamic\\Http\\Controllers\\AssetThumbnailController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetThumbnailController.php',
         'Statamic\\Http\\Controllers\\AssetsController' => __DIR__ . '/../..' . '/core/Http/Controllers/AssetsController.php',
         'Statamic\\Http\\Controllers\\Auth\\AuthController' => __DIR__ . '/../..' . '/core/Http/Controllers/Auth/AuthController.php',
         'Statamic\\Http\\Controllers\\Auth\\OAuthController' => __DIR__ . '/../..' . '/core/Http/Controllers/Auth/OAuthController.php',
@@ -2976,7 +2984,6 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
         'Statamic\\Imaging\\ImageUrlBuilder' => __DIR__ . '/../..' . '/core/Imaging/ImageUrlBuilder.php',
         'Statamic\\Imaging\\PresetGenerator' => __DIR__ . '/../..' . '/core/Imaging/PresetGenerator.php',
         'Statamic\\Imaging\\StaticUrlBuilder' => __DIR__ . '/../..' . '/core/Imaging/StaticUrlBuilder.php',
-        'Statamic\\Imaging\\ThumbnailUrlBuilder' => __DIR__ . '/../..' . '/core/Imaging/ThumbnailUrlBuilder.php',
         'Statamic\\Importing\\Statamic\\Migrator' => __DIR__ . '/../..' . '/core/Importing/Statamic/Migrator.php',
         'Statamic\\Importing\\Statamic\\Preparer' => __DIR__ . '/../..' . '/core/Importing/Statamic/Preparer.php',
         'Statamic\\Importing\\Statamic\\StatamicImporter' => __DIR__ . '/../..' . '/core/Importing/Statamic/StatamicImporter.php',
@@ -3638,10 +3645,10 @@ class ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit09b6e84a48b212684ed51c3dd116cb95::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit27ade07bb7cd4670f73e5d0bd026079e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit27ade07bb7cd4670f73e5d0bd026079e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit27ade07bb7cd4670f73e5d0bd026079e::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit27ade07bb7cd4670f73e5d0bd026079e::$classMap;
 
         }, null, ClassLoader::class);
     }
