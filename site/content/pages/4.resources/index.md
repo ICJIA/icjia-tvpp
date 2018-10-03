@@ -1,14 +1,14 @@
 ---
 title: Resources
 template: page
+add_overlay: false
 is_hidden: false
 add_dropcap: false
 fieldset: default
 id: 3eb20940-a3eb-4f44-ac36-4dcd474fe243
 ---
 The Targeted Violence Prevention Program leverages existing resources that can benefit individuals
-  and organizations seeking to build and sustain community-level programs to prevent ideologically
-  inspired targeted violence. Institutions, organizations, and websites that may be useful to TVPP and
+  and organizations seeking to build and sustain community-level programs to prevent all forms of targeted violence. Institutions, organizations, and websites that may be useful to TVPP and
   to our community partners will be shared here.
 
 

@@ -7,7 +7,7 @@
         <h1>{{ translate_choice('cp.submissions', 1) }}</h1>
     </div>
 
-    <div class="card">
+    <div class="card" v-pre>
         <table class="dossier mt-0">
             <tr>
                 <th width="25%">{{ t('date') }}</th>
@@ -18,7 +18,7 @@
                     <th>{{ array_get($field, 'display', $name) }}</th>
                     <td>
                         @if(! is_array($submission->get($name)))
-                            {!! $submission->get($name) !!}
+                            {!! strip_tags($submission->get($name), '<a>') !!}
                         @else
                             <table>
                                 @foreach($submission->get($name) as $key => $value)

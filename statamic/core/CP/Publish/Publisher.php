@@ -16,6 +16,8 @@ use Statamic\Exceptions\PublishException;
 
 abstract class Publisher
 {
+    use ProcessesFields;
+
     /**
      * @var \Illuminate\Http\Request
      */
@@ -84,7 +86,10 @@ abstract class Publisher
         $this->prepare();
 
         // Fieldtypes may modify the values submitted by the user.
-        $this->processFields();
+        // We will remove the null values for everything except Eloquent-managed users. They need the nulls to override
+        // what's going on the DB. @todo: Do this better. Don't judge me.
+        $removeNulls = $this->content instanceof User && Config::get('users.driver') === 'eloquent' ? false : true;
+        $this->fields = $this->processFields($this->content->fieldset(), $this->fields, $removeNulls);
 
         // Update the submission with the modified data
         $submission = array_merge($this->request->all(), ['fields' => $this->fields]);
@@ -130,13 +135,7 @@ abstract class Publisher
             return;
         }
 
-        $parent = Page::whereUri($this->request->input('extra.parent_url'));
-
-        $fieldset = $this->request->input('fieldset');
-
-        if ($fieldset !== $parent->fieldset()->name()) {
-            $this->fields['fieldset'] = $fieldset;
-        }
+        $this->fields['fieldset'] = $this->request->input('fieldset');
     }
 
     /**
@@ -194,25 +193,6 @@ abstract class Publisher
     }
 
     /**
-     * Run field data through fieldtypes processors
-     */
-    protected function processFields()
-    {
-        foreach ($this->content->fieldset()->fieldtypes() as $field) {
-            if (! in_array($field->getName(), array_keys($this->fields))) {
-                continue;
-            }
-
-            $this->fields[$field->getName()] = $field->process($this->fields[$field->getName()]);
-        }
-
-        // Get rid of null fields. (Empty arrays, literal null values, and empty strings)
-        $this->fields = array_filter($this->fields, function ($item) {
-            return is_array($item) ? !empty($item) : !in_array($item, [null, '']);
-        });
-    }
-
-    /**
      * Perform validation with provided rules
      *
      * @param  array $rules
@@ -221,7 +201,12 @@ abstract class Publisher
      */
     protected function validate($rules, $messages = [], $attributes = [])
     {
-        $validator = app('validator')->make($this->request->all(), $rules, $messages, $attributes);
+        $validator = app('validator')->make(
+            $this->request->all($rules),
+            $rules,
+            $messages,
+            $attributes
+        );
 
         if ($validator->fails()) {
             $e = new PublishException;
@@ -282,6 +267,10 @@ abstract class Publisher
 
         if ($this->slug) {
             $this->content->slug($this->slug);
+        }
+
+        if ($this->content instanceof User) {
+            $this->content->remove('fieldset');
         }
     }
 

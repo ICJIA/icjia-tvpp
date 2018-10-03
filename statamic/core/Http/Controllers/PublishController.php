@@ -12,10 +12,12 @@ use Statamic\API\Taxonomy;
 use Statamic\CP\Publish\Publisher;
 use Statamic\Contracts\CP\Fieldset as FieldsetContract;
 use Statamic\Addons\Suggest\TypeMode;
+use Statamic\CP\Publish\ProcessesFields;
 use Statamic\Exceptions\PublishException;
 
 abstract class PublishController extends CpController
 {
+    use ProcessesFields;
     use GetsTaxonomiesFromFieldsets;
 
     /**
@@ -110,7 +112,7 @@ abstract class PublishController extends CpController
             ];
         }
 
-        $successMessage = translate('cp.thing_saved', ['thing' => ucwords($request->type)]);
+        $successMessage = t('saved_success');
 
         if (! $request->continue || $request->new) {
             $this->success($successMessage);
@@ -205,66 +207,6 @@ abstract class PublishController extends CpController
         return $locales;
     }
 
-    /**
-     * Create the data array, populating it with blank values for all fields in
-     * the fieldset, then overriding with the actual data where applicable.
-     *
-     * @param string|\Statamic\Data\Content $arg Either a content object, or the name of a fieldset.
-     * @return array
-     */
-    protected function populateWithBlanks($arg)
-    {
-        // Get a fieldset and data
-        if ($arg instanceof \Statamic\Contracts\Data\Content\Content) {
-            $fieldset = $arg->fieldset();
-            $data = $arg->processedData();
-        } else {
-            $fieldset = Fieldset::get($arg);
-            $data = [];
-        }
-
-        // This will be the "merged" fieldset, built up from any partials.
-        $merged_fieldset = [];
-
-        // Get the fieldtypes
-        $fieldtypes = collect($fieldset->fieldtypes());
-
-        // Merge any fields from nested fieldsets (only a single level - @todo: recursion)
-        $partials = collect();
-        $fieldtypes->each(function ($ft) use ($partials, &$merged_fieldset) {
-            if ($ft->getAddonClassName() === 'Partial') {
-                $pfs = Fieldset::get($ft->getFieldConfig('fieldset'));
-
-                $merged_fieldset = array_merge($pfs->fields(), $merged_fieldset);
-
-                foreach ($pfs->fieldtypes() as $f) {
-                    $partials->push($f);
-                }
-            }
-        });
-
-        // Merge the partials and key everything by field name.
-        $fieldtypes = $fieldtypes->merge($partials)->keyBy(function($ft) {
-            return $ft->getName();
-        });
-        $merged_fieldset = array_merge($fieldset->fields(), $merged_fieldset);
-
-        // Build up the blanks
-        $blanks = [];
-        foreach ($merged_fieldset as $name => $config) {
-            if (! $default = array_get($config, 'default')) {
-                $default = $fieldtypes->get($name)->blank();
-            }
-
-            $blanks[$name] = $default;
-            if ($fieldtype = $fieldtypes->get($name)) {
-                $blanks[$name] = $fieldtype->preProcess($default);
-            }
-        }
-
-        return array_merge($blanks, $data);
-    }
-
     protected function getSuggestions($fieldset)
     {
         return collect(
@@ -278,7 +220,7 @@ abstract class PublishController extends CpController
             );
 
             return [
-                'suggestions' => (new $mode($config))->suggestions(),
+                'suggestions' => $mode->setConfig($config)->suggestions(),
                 'key' => json_encode($config)
             ];
         })->pluck('suggestions', 'key');
@@ -305,9 +247,11 @@ abstract class PublishController extends CpController
                 $suggestFields = array_merge($suggestFields, $this->getSuggestFields($config['fields'], $prefix . $handle));
             }
 
-            if ($type === 'replicator') {
-                foreach ($config['sets'] as $set) {
-                    $suggestFields = array_merge($suggestFields, $this->getSuggestFields($set['fields'], $prefix . $handle));
+            if ($type === 'replicator' || $type === 'bard') {
+                foreach (array_get($config, 'sets', []) as $set) {
+                    if (isset($set['fields'])) {
+                        $suggestFields = array_merge($suggestFields, $this->getSuggestFields($set['fields'], $prefix . $handle));
+                    }
                 }
             }
 

@@ -12,6 +12,7 @@ return [
     'search_for_anything' => 'Search for anything',
 
     // Pages
+    'page' => 'Page',
     'pages' => 'Page|Pages',
     'nav_pages' => 'Pages',
     'create_page_button' => 'Create Page',
@@ -40,9 +41,13 @@ return [
     'collection_title_instructions' => 'The proper name of your collection.',
     'collection_handle_instructions' => "The collection's variable name used in settings and templates.",
     'collection_order_instructions' => "Set the default sorting method for entries in this collection.",
+    'collection_fieldset_instructions' => "The default fieldset, unless otherwise specified.",
+    'collection_template_instructions' => "The default template, unless otherwise specified.",
     'collection_route_instructions' => "The route controls the URL pattern all entries in the collection will follow.",
+    'collection_does_not_exist' => 'Collection :collection does not exist.',
 
     // Entries
+    'entry' => 'Entry',
     'entries' => 'Entry|Entries',
     'nav_entries' => 'Entries',
     'create_entry_button' => 'Create Entry',
@@ -54,6 +59,7 @@ return [
     'entries_empty' => 'Entries are bits of content that have their own URL and are often shown in lists, like blog posts, press releases, and events.',
 
     // Taxonomies
+    'taxonomy' => 'Taxonomy',
     'taxonomies' => 'Taxonomy|Taxonomies',
     'nav_taxonomies' => 'Taxonomies',
     'create_taxonomy' => 'Create New Taxonomy',
@@ -77,6 +83,7 @@ return [
     'taxonomy_terms_empty' => 'Where a Taxonomy is the grouping, a Term is the actual label applied to a piece of content. For example, "Red" would be a term in "Colors".',
 
     // Globals
+    'global' => 'Global',
     'globals' => 'Global|Globals',
     'nav_globals' => 'Globals',
     'global_sets' => 'Global Sets',
@@ -116,6 +123,7 @@ return [
     'filesize' => 'File size',
     'date_modified' => 'Date modified',
     'parent_folder' => 'Parent folder',
+    'containers' => 'Containers',
     'asset_folder_empty_heading' => 'Empty folder.',
     'asset_folder_empty' => 'You may upload new assets into this folder by dragging and dropping files into the outlined area above.',
     'focal_point' => 'Focal point',
@@ -126,8 +134,10 @@ return [
     'rename_file' => 'Rename File',
     'rename_file_warning' => 'Renaming a file will not update any references to it, which _may_ result in broken links in your site.',
     'move_file' => 'Move file',
+    'move_file_warning' => 'Moving a file will not update any references to it, which _may_ result in broken links in your site.',
     'dimensions' => 'Dimensions',
     'last_modified' => 'Last Modified',
+    'url_resolves_to' => 'URL resolves to: :path',
 
 
     // Folder
@@ -168,6 +178,7 @@ return [
     'secret_access_key' => 'Secret Access Key',
 
     // Users
+    'user' => 'User',
     'users' => 'User|Users',
     'nav_users' => 'Users',
     'manage_users' => 'Manage Users',
@@ -179,12 +190,19 @@ return [
     'user_updated' => 'User updated',
     'reset_password' => 'Reset your password',
     'send_email' => 'Send email',
+    'email_sent' => 'Email sent',
     'send_activation_email' => 'Send activation email',
     'send_password_reset_email' => 'Send password reset email',
+    'password_reset_email_not_sent' => 'Email not sent. Please check your logs.',
     'copy_activation_link' => 'Copy activation link',
     'copy_password_reset_link' => 'Copy password reset link',
+    'copy_password_reset_link_failed' => 'There was a problem generating the link. Please check your logs.',
     'password_reset_sent' => 'Password reset email sent',
+    'account_activated' => 'Your account has been activated',
+    'password_reset_success' => 'You password has been reset',
+    'activate_account' => 'Activate Account',
     'account' => 'Account',
+    'password' => 'Password',
     'my_account' => 'My Account',
     'profile' => 'Profile',
     'logout' => 'Logout',
@@ -193,6 +211,9 @@ return [
     'user_bio_instructions' => 'A little bit about you, if you like.',
     'user_account_created' => 'A user account has been created.',
     'forgot_password' => 'Forgot password?',
+    'invalid_user' => 'Invalid user',
+    'invalid_code' => 'Invalid code',
+    'invalid_creds' => 'Invalid credentials',
     'go_back' => 'Go Back',
 
     // Password Reset
@@ -224,6 +245,7 @@ return [
     'page_not_found' => 'Page not found',
     'page_not_found_instructions' => 'The page you requested does not exist.',
     'session_expired' => 'Your session has expired.',
+    'stache_building' => 'The cache is being updated. Please wait and try again.',
 
 
     // User Groups
@@ -250,9 +272,21 @@ return [
     'settings_email' => 'Email',
     'settings_theming' => 'Theming',
     'settings_users' => 'Users',
-    'settings_updated' => 'Settings updated.',
+    'settings_updated' => 'Settings saved.',
+    'settings_updated_and_indexed' => 'Settings saved and search indexes updated.',
     'settings_locales_instructions' => "Create a locale for each language translation. You can skip this for now and do it later if you'd prefer.",
+    'settings_locales_index_php_warning' => "You will need to change the <code>\$locale</code> to <code>:locale</code> in your <code>index.php</code> file.",
     'settings_debug_mode_instructions' => "Enabling Debug Mode will display all errors on screen. It's a great tool while a site is development, but remember to disable it in production.",
+
+    'shorthand' => 'Shorthand',
+    'shorthand_instructions' => 'The 2 character language code.<br> Example: `en`, `de`.',
+    'add_locale' => 'Add Locale',
+    'full_locale' => 'Full Locale',
+    'full_locale_instructions' => 'Used for PHP date localization.<br>Example: `en_US`, `de_DE`.',
+    'locale_name_instructions' => 'Used for display.<br> Example: `English`, `German`.',
+    'locale_url_instructions' => 'Example: `http://example.com/de/`',
+
+
 
     // Addons
     'addons' => 'Addon|Addons',
@@ -270,13 +304,14 @@ return [
     'fieldset_created' => 'Fieldset created',
     'editing_fieldset' => 'Editing Fieldset',
     'fieldset_updated' => 'Fieldset updated',
-    'fieldsets_empty' => 'Fieldsets let you create and manage reusable groups of fieldtypes that in turn mange your content. This is where content modeling happens.',
+    'fieldsets_empty' => 'Fieldsets let you create and manage reusable groups of fieldtypes that in turn manage your content. This is where content modeling happens.',
     'fieldset_title_instructions' => 'The proper name of the fieldset. Usually a singular noun.',
     'fieldset_handle_instructions' => "The fieldset's variable name used in settings and templates.",
     'fieldset_create_title_instructions' => "Optional, customizable title shown when creating new content with this fieldset.",
     'fieldset_hide_instructions' => "Hide this fieldset from selection dialogs?",
     'fieldset_fields_instructions' => 'Assign and customize the fields and fieldtypes in this fieldset.',
     'fieldset_taxonomies_instructions' => 'Show, hide, and configure the taxonomies that should be displayed in this fieldset.',
+    'fieldset_date_and_time_instructions' => 'You may customize the date field behavior. This only applies when the fieldset is used on a date based entry.',
     'create_title' => 'Create Title',
     'display_name' => "Display Name",
     'display_name_instructions' => "The field's label shown in the Control Panel.",
@@ -299,11 +334,21 @@ return [
     'edit_field' => 'Edit Field',
     'choose_field_to_edit' => "Choose a field to edit its settings.",
 
+    'display_conditions' => 'Display Conditions',
+    'display_conditions_instructions' => 'Configure when this field will be shown.',
+    'always_show' => 'Always Show',
+    'show_when' => 'Show when...',
+    'hide_when' => 'Hide when...',
+    'standard' => 'Standard',
+    'custom' => 'Custom',
+    'display_standard_instructions' => 'Choose a combination of fields and corresponding values.',
+    'display_custom_instructions' => 'Enter your custom JavaScript condition method name.',
+
     // Forms
     'form' => 'Form',
     'forms' => 'Form|Forms',
     'nav_forms' => 'Forms',
-    'forms_empty' => 'Forms collect, display, and report user submitted reponses.',
+    'forms_empty' => 'Forms collect, display, and report user submitted responses.',
     'create_form' => 'Create Form',
     'form_updated' => 'Form updated',
     'form_created' => 'Form created',
@@ -328,6 +373,8 @@ return [
     'formset_emails_instructions' => 'Add any emails you want to be sent upon submission.',
     'formset_honeypot_field' => 'Honeypot Field',
     'formset_honeypot_instructions' => 'The field name to be used for the honeypot.',
+    'formset_store_field' => 'Store Submissions',
+    'formset_store_instructions' => 'Whether form submissions should be stored. Useful if you only wish to get email notifications.',
     'formset_honeypot_link' => "What's a honeypot?",
     'formset_fields_instructions' => 'Choose and customize the fields in this form.',
 
@@ -351,6 +398,7 @@ return [
     'backing_up' => 'Backing up...',
     'backing_up_instructions' => "We're zipping up your <code>statamic</code> folder, just in case you need to roll back.",
     'backup_reminder' => 'This is a safe process. We back up everything during running the update so you can always find your most recent version in <code>local/temp</code> if something goes wrong.',
+    'couldnt_fetch_updates' => 'There was a problem fetching updates',
 
     // Download
     'downloading' => 'Downloading...',
@@ -380,7 +428,7 @@ return [
 
     // Swap Release
     'swapping_files' => 'Swapping files...',
-    'swapping_files_instructions' => 'Statamic is being injected with software growth hormone (SGH). Results will be visible mere moments.',
+    'swapping_files_instructions' => 'Statamic is being injected with software growth hormone (SGH). Results will be visible in mere moments.',
     'files_swapped' => 'Files swapped.',
 
     // Clean Up
@@ -417,6 +465,8 @@ return [
     'thing_saved' => ':thing saved.',
     'thing_editing' => 'Editing :thing',
 
+    'saved_success' => 'Saved',
+
     // Statuses
     'statuses' => 'Status|Statuses',
     'status_pending' => 'Pending',
@@ -435,6 +485,8 @@ return [
     'license_invalid' => 'This key is invalid.',
     'license_key_instructions' => 'Please enter your license key. You can find yours in your <a href=":licenses">Statamic Account</a> or you can <a href=":buy_license">buy a new license</a> if you need to.',
     'enter_license_key' => 'Please enter your license key to access to the control panel on a public domain.',
+    'add_license_key' => 'Add License Key',
+    'buy_now' => 'Buy Now',
 
     'continue_in_trial_mode' => 'Continue in Trial Mode',
     'unlicensed' => 'Unlicensed',
@@ -501,6 +553,8 @@ return [
     'please_select' => 'Please select',
     'selected' => 'selected',
     'add_another_item' => 'Add another item',
+    'show_drafts' => 'Show Drafts',
+    'hide_drafts' => 'Hide Drafts',
 
     // Nouns and whatnot
     'fields' => 'Field|Fields',
@@ -569,6 +623,8 @@ return [
     'driver' => 'Driver',
     'path' => 'Path',
     'url' => 'URL',
+    'valid_url' => 'Valid URL',
+    'invalid_url' => 'Invalid URL',
     'bucket' => 'Bucket',
     'region' => 'Region',
     'metrics' => 'Metric|Metrics',
@@ -583,6 +639,9 @@ return [
     'be_right_back' => 'Be right back.',
     'size' => 'Size',
     'attribute_field_name' => ':attribute field',
+    'read_only_mode' => "Read Only Mode",
+    'next_step' => "Next Step",
+    'invalid_creds' => 'These credentials are incorrect',
 
     'nav_content' => 'Content',
     'nav_tools' => 'Tools',
@@ -604,6 +663,20 @@ return [
 
     // Duplicate ID Manager
     'duplicate_id_title' => 'Duplicate IDs',
-    'no_duplicate_ids' => 'No duplicate IDs detected.'
+    'no_duplicate_ids' => 'No duplicate IDs detected.',
+    'generate_new_id' => 'Generate new ID.',
 
+    // Path
+    'path_resolves_to'    => 'Path resolves to: :path',
+    'path_exists'         => 'Path exists.',
+    'path_does_not_exist' => 'Path does not exist.',
+
+    // Bard
+    'link'               => 'Link',
+    'paste_or_type_link' => 'Paste or type a link',
+    'bold'               => 'Bold',
+    'italic'             => 'Italic',
+    'blockquote'         => 'Blockquote',
+    'h2'                 => 'Header type two',
+    'h3'                 => 'Header type three',
 ];
