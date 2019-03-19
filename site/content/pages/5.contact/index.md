@@ -1,11 +1,12 @@
 ---
 title: Contact TVPP
 template: page
+add_overlay: false
+short_description: >
+  Junaid M. Afeef was named director of the Targeted Violence Prevention Program at the Illinois
+  Criminal Justice Information Authority in February 2016.
 is_hidden: false
 add_dropcap: false
-short_description: 'Junaid M. Afeef was named director of the Targeted Violence Prevention Program at the Illinois Criminal Justice Information Authority in February 2016.'
-add_overlay: false
-abstract: ""
 nav_title: Contact
 fieldset: default
 id: de6221a5-1919-47ca-8d1f-2092db09a1a5
@@ -16,7 +17,7 @@ id: de6221a5-1919-47ca-8d1f-2092db09a1a5
   
   Mr. Afeef served as the executive director of the Council of Islamic Organizations of Greater Chicago in 2008 and 2009 where he focused on promoting civic engagement and interfaith dialogue. Mr. Afeef is a fellow with the American Muslim Civic Leadership Institute at the University of Southern California. He is also a partner at the Truman National Security Project. Mr. Afeef’s commentary on domestic terrorism and countering violent extremism (CVE) has appeared in the Chicago Tribune and in numerous online publications and journals.
   
-  <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;(312) 793-7434 [<i class="fa fa-envelope" aria-hidden="true"></i> Email](/contact/contact-form) {.no-underline .spacer-left}[<i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook](https://www.facebook.com/targetedviolenceprevention/) {.no-underline .spacer-left}
+  <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;(312) 793-8550 [<i class="fa fa-envelope" aria-hidden="true"></i> Email](/contact/contact-form) {.no-underline .spacer-left}[<i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook](https://www.facebook.com/targetedviolenceprevention/) {.no-underline .spacer-left}
   
   <h4>Academic Background</h4>
   
@@ -54,7 +55,7 @@ Illinois Criminal Justice Information Authority
 
 Chicago, Illinois 60606
 
-T: 312-793-7434
+T: 312-793-8550
 
 E: [junaid.afeef@illinois.gov](junaid.afeef@illinois.gov)
 <div class="text-center" style="margin-top: 50px; margin-bottom: 50px;">
